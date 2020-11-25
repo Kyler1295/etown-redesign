@@ -900,6 +900,9 @@ div[class*="-background"] {
 
 @media screen and (min-width: 1200px) {
   .bluejays-see__wrapper {
+    h2 {
+      padding: 3%;
+    }
     .bluejays-blocks__wrapper {
       .bluejays-block__wrapper {
         width: 30%;

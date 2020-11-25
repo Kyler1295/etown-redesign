@@ -573,20 +573,20 @@ div[class*=-background] {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: 3px;
-  left: 2px;
+  top: 2px;
+  left: 3px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 4px;
-  left: -2px;
+  top: -4px;
+  left: 0px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -3px;
-  left: 1px;
+  top: -4px;
+  left: 5px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 3px;
-  left: -1px;
+  top: 0px;
+  left: -4px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -749,6 +749,9 @@ div[class*=-background] {
   }
 }
 @media screen and (min-width: 1200px) {
+  .bluejays-see__wrapper h2 {
+    padding: 3%;
+  }
   .bluejays-see__wrapper .bluejays-blocks__wrapper .bluejays-block__wrapper {
     width: 30%;
     height: 40vh;
