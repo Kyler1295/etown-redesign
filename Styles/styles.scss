@@ -1,0 +1,824 @@
+// Styles Reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Global Variables
+
+// Colors
+$primary-blue: #004B98;
+$dark-blue: #0A2240;
+$red: #E1261C;
+$light-blue: #3DB5E6;
+$gray: #C8C8C8;
+$white: #FFFFFF;
+$black: #000000;
+
+// Font Variables
+$header-font: 2.8rem;
+$text-font: 1rem;
+
+// Global Mixins
+
+// flex mixins
+@mixin center-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin around-center() {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin between-center() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Base Styles
+// Text
+p,
+i,
+strong,
+b {
+  font-family: tablet-gothic, sans-serif;
+  font-size: $text-font;
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-weight: 200;
+}
+
+h1,
+h3,
+h5 {
+  font-family: clarendon-text-pro, serif;
+}
+
+h2,
+h4,
+h6 {
+  font-family: tablet-gothic, sans-serif;
+}
+
+h1 {
+  font-size: $header-font;
+}
+
+h2 {
+  font-size: $header-font * .6;
+}
+
+h3 {
+  font-size: $header-font * .6;
+}
+
+h4 {
+  font-size: $header-font * .5;
+}
+
+h5 {
+  font-size: $header-font * .5;
+}
+
+h6 {
+  font-size: $header-font * .4;
+}
+
+a {
+  font-family: tablet-gothic, sans-serif;
+  font-size: $text-font;
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.italic {
+  text-emphasis: oblique;
+}
+
+.white-text {
+  color: $white;
+}
+
+.blue-text {
+  color: $primary-blue;
+}
+
+.darkBlue-text {
+  color: $dark-blue;
+}
+
+.red-text {
+  color: $red;
+}
+
+.black-text {
+  color: $black;
+}
+
+@media screen and (min-width: 768px) {
+  p,
+  i,
+  strong,
+  b {
+    font-size: $text-font * 1.6;
+    line-height: 46px;
+  }
+  h1 {
+    font-size: $header-font * 1.6;
+  }
+  
+  h2 {
+    font-size: $header-font * 1.2;
+  }
+  
+  h3 {
+    font-size: $header-font * 1.2;
+  }
+  
+  h4 {
+    font-size: $header-font * 1.1;
+  }
+  
+  h5 {
+    font-size: $header-font * .7;
+  }
+  
+  h6 {
+    font-size: $header-font * .7;
+  }
+}
+
+
+// buttons
+div[class*="buttons"] {
+  margin: 5% 0;
+}
+
+a[class*="light-blue"] {
+  background-color: $light-blue;
+  color: $black;
+}
+
+a[class*="red"] {
+  background-color: $red;
+  color: $white;
+  border: 1px solid $white;
+}
+
+a[class*="button"] {
+  font-size: $text-font * .95;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4% 8%;
+  border-radius: 50px;
+  margin: 0 2% 5% 0;
+  display: inline-flex;
+}
+
+.callout {
+  text-decoration: none;
+  color: $primary-blue;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  a[class*="button"] {
+    padding: 3% 6%;
+    font-size: $text-font * 1.4;
+  }
+  .callout {
+    font-size: $header-font * .8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  a[class*="button"] {
+    padding: 1% 3%;
+    font-size: $text-font * 1.2;
+  }
+}
+
+// icons
+.material-icons.right-arrow {
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+
+// Circles
+div[class*="circle"] {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  @include center-center();
+  font-size: 4rem;
+  font-size: bold;
+  position: relative;
+  margin: 0 0 10% 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 3px solid $white;
+    z-index: 1;
+  }
+}
+
+.blue-circle {
+  background: $primary-blue;
+  color: $white;
+}
+
+.red-circle {
+  background: $red;
+  color: $white;
+}
+
+
+
+// width setter
+div[class*="-background"] {
+  padding: 15% 10%;
+}
+
+// Colored Backgrounds
+.blue-background {
+  background: $primary-blue;
+  color: $white;
+}
+
+.dark-background {
+  background: $dark-blue;
+  color: $white;
+}
+
+.white-background {
+  background: $white;
+  color: $black;
+}
+
+.red-background {
+  background: $red;
+  color: $white;
+}
+
+.gradient-background {
+  background: rgb(0, 75, 152);
+  background: radial-gradient(circle, rgba(0, 75, 152, 1) 0%, rgba(10, 34, 64, 1) 100%);
+}
+
+@media screen and (min-width: 768px) {
+  div[class*="-background"] {
+    padding: 5% 5%;
+  }
+}
+
+// Textured backgrounds
+.lines-background {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.etown.edu/etcsandbox/schools/images/particles_2000w.png');
+    background-size: contain;
+  }
+}
+
+// Specific Styles
+
+// Video hero
+.hero-video__wrapper {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  @include center-center();
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background: $black;
+    opacity: .3;
+  }
+
+  .hero-video__text-wrapper {
+    position: absolute;
+    width: 80%;
+    color: $white;
+    z-index: 2;
+
+    h6 {
+      margin: 4% 0 0 0;
+    }
+
+    .hero-video__buttons {
+      margin: 10% 0 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-video__wrapper {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-video__wrapper {
+    height: 70vh;
+    .hero-video__text-wrapper {
+      .hero-video__buttons {
+        margin: 2% 0 0 0;
+      }
+    }
+  }
+}
+
+// Quick Links
+.quick-links__wrapper {
+  .offset-items__wrapper {
+    .offset-events__wrapper {
+      .offset-events__heading {
+        display: flex;
+        margin: 0 0 15px 0;
+
+        span {
+          margin: 3px 5px 0 0;
+          width: 15%;
+          font-size: 2rem;
+        }
+
+        h4 {
+          width: 90%;
+        }
+      }
+
+      .offset-events__buttons {
+        margin: 10% 0 0 0;
+      }
+    }
+
+    .offset-audience__wrapper {
+      h5 {
+        margin: 0 0 5px 0;
+      }
+
+      label {
+        display: block;
+        margin: 40px 0 15px 0;
+        font-size: 2.25rem;
+        font-weight: bold;
+      }
+
+      select {
+        width: 100%;
+        padding: 4%;
+        font-size: 1.25rem;
+        font-family: tablet-gothic, sans-serif;
+      }
+    }
+  }
+
+  .audience-items__wrapper {
+    width: 80%;
+    margin: 5% auto;
+
+    .audience-items__subset {
+      width: 100%;
+
+      .audience-items__item {
+        width: 100%;
+        margin: 10% 0;
+
+        img {
+          width: 100%;
+        }
+
+        h4 {
+          margin: 0 0 2.5% 0;
+
+          a {
+            span {
+              transform: translate(0%, 18%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quick-links__wrapper {
+    .offset-items__wrapper {
+      width: 90%;
+      transform: translate(5%, -5%);
+      z-index: 5;
+      position: relative;
+      .offset-events__wrapper {
+        margin: 0 0 25px 0;
+      }
+      .offset-audience__wrapper {
+        margin: 25px 0 0 0;
+        label {
+          display: inline;
+          width: auto;
+          font-size: $header-font * 1.2;
+          margin: 10px 0 0 0;
+        }
+        select {
+          display: inline;
+          width: auto;
+          padding: 2% 5%;
+          margin: 50px 0 0 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quick-links__wrapper {
+    .offset-items__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      transform: translate(5%, -10%);
+      .offset-events__wrapper {
+        width: 60%;
+      }
+      .offset-audience__wrapper {
+        width: 38%;
+      }
+    }
+  }
+}
+
+// Tour Video
+.tour-video__wrapper {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  @include center-center();
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 250%;
+    height: 100%;
+    background-image: url(../images/Bullseye.png);
+    background-size: cover;
+    background-position: right center;
+    opacity: .3;
+    z-index: 1;
+  }
+
+  .tour-video__text-wrapper {
+    position: absolute;
+    width: 80%;
+    color: $white;
+    z-index: 2;
+
+    h2 {
+      margin: 4% 0 0 0;
+      font-family: tablet-gothic, sans-serif;
+    }
+
+    .tour-video__buttons {
+      margin: 10% 0 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tour-video__wrapper {
+    height: 35vh;
+    .tour-video__text-wrapper {
+      .tour-video__buttons {
+        margin: 2% 0 0 0;
+      }
+    }
+  }
+}
+
+// Why Etown
+.why-etown__wrapper {
+  .audience-items__item {
+    width: 100%;
+    margin: 10% 0 20%;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      margin: 2.5% 0 2.5% 0;
+
+      a {
+        font-family: clarendon-text-pro, serif;
+        text-decoration: none;
+        color: $primary-blue;
+        text-transform: uppercase;
+        font-size: 1.75rem;
+        line-height: .5rem;
+      }
+    }
+
+    p {
+      margin: 0 0 10% 0;
+    }
+  }
+}
+
+// Outcomes
+.outcomes__wrapper {
+  @include center-center();
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -90%;
+    width: 300%;
+    height: 100%;
+    background-image: url('https://www.etown.edu/etcsandbox/omc-redesign/images/waves_2000w.png');
+    background-size: cover;
+  }
+
+  flex-direction: column;
+
+  .outcomes__item {
+    @include center-center();
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 3;
+
+    &.hidden {
+      display: none;
+    }
+
+    p {
+      color: $white;
+      margin: 5% 0;
+      font-size: $text-font + .25rem;
+    }
+
+    .circle-one {
+      &::before {
+        top: random(10) + -5px;
+        left: random(10) + -5px;
+      }
+    }
+
+    .circle-two {
+      &::before {
+        top: random(10) + -5px;
+        left: random(10) + -5px;
+      }
+    }
+
+    .circle-three {
+      &::before {
+        top: random(10) + -5px;
+        left: random(10) + -5px;
+      }
+    }
+
+    .circle-four {
+      &::before {
+        top: random(10) + -5px;
+        left: random(10) + -5px;
+      }
+    }
+  }
+
+  .outcomes__buttons {
+    z-index: 3;
+    @include center-center();
+    width: 100%;
+
+    a {
+      text-align: center;
+      font-size: 1.25rem;
+    }
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    color: $white;
+    position: absolute;
+    top: 20%;
+
+    span {
+      font-size: 4rem;
+    }
+  }
+
+  .prev-arrow {
+    left: 5%;
+  }
+
+  .next-arrow {
+    right: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .outcomes__wrapper {
+    .outcomes__item {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 80%;
+      .outcomes__circle {
+        margin-right: 5%;
+      }
+      .outcomes__text {
+        width: 60%;
+      }
+    }
+    .outcomes__item.hidden {
+      display: flex !important;
+    }
+    .next-arrow, .prev-arrow {
+      display: none;
+    }
+    .outcomes__buttons {
+      justify-content: flex-start;
+      width: 80%;
+    }
+  }
+}
+
+// What BlueJays See
+.bluejays-see__wrapper {
+  padding: 10% 0 0 0;
+
+  h2 {
+    font-size: $header-font * .8;
+    color: $primary-blue;
+    padding: 10%;
+  }
+
+  .bluejays-blocks__wrapper {
+    .bluejays-block__wrapper {
+      position: relative;
+      width: 100vw;
+      height: 100vw;
+
+      .bluejays-block__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .bluejays-block__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .bluejays-block__social {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: $white;
+        @include center-center();
+
+        span {
+          margin: 5px 5px 0 0;
+        }
+      }
+    }
+
+    .centeredText {
+      .bluejays-block__text {
+        @include center-center();
+        flex-direction: column;
+      }
+    }
+
+    .plain-block {
+      .bluejays-block__text {
+        padding: 10%;
+        @include center-center();
+        flex-direction: column;
+
+        h5 {
+          margin: 0 0 25px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bluejays-see__wrapper {
+    padding: 4% 0 6% 0;
+    h5 {
+      font-size: $header-font * .6;
+    }
+    h6 {
+      font-size: $header-font * .6;
+    }
+    h2 {
+      font-size: $header-font * 1.4;
+    }
+    .bluejays-blocks__wrapper {
+      @include center-center();
+      width: 80%;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      .bluejays-block__wrapper {
+        width: 50%;
+        height: 40vw;
+        .plain-block {
+          h5 {
+            font-size: $header-font * .4;
+          }
+        }
+      }
+    }
+  }
+}
+
+// News
+.news__wrapper {
+  color: $white;
+  h3, h6, hr, a {
+    margin: 0 0 25px 0;
+  }
+  strong {
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+  }
+  .news__buttons {
+    margin: 0 0 75px 0;
+  }
+  .event {
+    margin: 0 0 25px 0;
+    div {
+      padding: 0 1%;
+      width: 100%;
+      span,
+      p {
+        display: inline;
+      }
+      span {
+        margin: 15px 5px 0 0;
+      }
+    }
+  }
+}
+
+
+// CTA
