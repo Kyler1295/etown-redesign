@@ -109,7 +109,7 @@ a {
 }
 
 .white-text {
-  color: $white;
+  color: $white !important;
 }
 
 .blue-text {
@@ -207,7 +207,7 @@ a[class*="button"] {
 
 @media screen and (min-width: 1200px) {
   a[class*="button"] {
-    padding: 1% 3%;
+    padding: 2% 3%;
     font-size: $text-font * 1.2;
   }
 }
@@ -479,9 +479,54 @@ div[class*="-background"] {
       transform: translate(5%, -10%);
       .offset-events__wrapper {
         width: 60%;
+        padding: 3%;
+        height: 350px;
+        .offset-events__heading {
+          span {
+            width: 10%;
+            font-size: 4rem;
+            margin: 0;
+          }
+        }
+        .offset-events__buttons {
+          margin: 1% 0 0 0;
+        }
       }
       .offset-audience__wrapper {
         width: 38%;
+        padding: 5%;
+        height: 350px;
+        margin: 0;
+        label {
+          font-size: $header-font;
+        }
+        select {
+          margin: 7.5% 0 0 0;
+          padding: 5% 10%;
+        }
+      }
+    }
+    .audience-items__wrapper {
+      .audience-items__subset {
+        display: flex;
+        justify-content: space-between;
+        .audience-items__item {
+          width: 30%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .quick-links__wrapper {
+    .offset-items__wrapper {
+      .offset-events__wrapper {
+        height: 450px;
+      }
+      .offset-audience__wrapper {
+        height: 450px;
       }
     }
   }
@@ -543,6 +588,12 @@ div[class*="-background"] {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .tour-video__wrapper {
+    height: 70vh;
+  }
+}
+
 // Why Etown
 .why-etown__wrapper {
   .audience-items__item {
@@ -568,6 +619,36 @@ div[class*="-background"] {
 
     p {
       margin: 0 0 10% 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .why-etown__wrapper {
+    .audience-items__item {
+      display: flex;
+      justify-content: space-between;
+      margin: 5% 0 0 0;
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+      img {
+        width: 50%;
+      }
+      .audience-items__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
+        p {
+          margin: 0 0 2% 0;
+        }
+        .why-etown__buttons {
+          display: block;
+          margin: 2% 0 0 0;
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -695,6 +776,34 @@ div[class*="-background"] {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .outcomes__wrapper {
+    &::before {
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .outcomes-items__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      .outcomes__item {
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 23%;
+        .outcomes__text {
+          width: 90%;
+        }
+      }
+    }
+    .outcomes__buttons {
+      justify-content: center;
+      margin: 2% 0 0 0;
+    }
+  }
+}
+
 // What BlueJays See
 .bluejays-see__wrapper {
   padding: 10% 0 0 0;
@@ -789,6 +898,17 @@ div[class*="-background"] {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .bluejays-see__wrapper {
+    .bluejays-blocks__wrapper {
+      .bluejays-block__wrapper {
+        width: 30%;
+        height: 40vh;
+      }
+    }
+  }
+}
+
 // News
 .news__wrapper {
   color: $white;
@@ -820,5 +940,36 @@ div[class*="-background"] {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .news__wrapper {
+    display: flex;
+    justify-content: space-around;
+    .news__section {
+      width: 40%;
+    }
+  }
+}
+
 
 // CTA
+@media screen and (min-width: 1200px) {
+  .whats-next__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      width: 50%;
+      text-align: right;
+      padding: 0 15% 0 0;
+    }
+    .standard__buttons {
+      display: flex;
+      justify-content: flex-start;
+      width: 50%;
+      margin: 0;
+      a {
+        margin: 0 2.5% 0 0;
+      }
+    }
+  }
+}
