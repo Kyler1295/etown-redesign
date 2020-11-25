@@ -418,6 +418,9 @@ div[class*="-background"] {
 
     .audience-items__subset {
       width: 100%;
+      &.hidden {
+        display: none;
+      }
 
       .audience-items__item {
         width: 100%;
@@ -974,5 +977,64 @@ div[class*="-background"] {
         margin: 0 2.5% 0 0;
       }
     }
+  }
+}
+
+// Animation Classes
+// Outcome Fades
+.outcome-fadeIn {
+ animation-name: fadeIn;
+ animation-duration: 1s;
+ animation-iteration-count: 1;
+ transition: 1s ease-in linear;
+}
+
+.outcome-fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  transition: 1s ease-in linear;
+}
+
+@media screen and (min-width: 768px) {
+  .outcome-fadeIn, .outcome-fadeOut {
+    animation: none;
+  }
+}
+
+// Audience Fades
+.audience-fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  transition: 1s ease-in linear;
+ }
+ 
+ .audience-fadeOut {
+   animation-name: fadeOut;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+   transition: 1s ease-in linear;
+ }
+
+// Keyframes
+
+@keyframes fadeOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  } to {
+    transform: translate (-25px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translate(25px, 0);
+    opacity: 0;
+  } to {
+    transform: translate (0, 0);
+    opacity: 1;
   }
 }
