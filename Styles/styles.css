@@ -576,19 +576,19 @@ div[class*=-background] {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: 1px;
-  left: -3px;
+  top: 2px;
+  left: -1px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 3px;
-  left: 0px;
+  top: 1px;
+  left: 3px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: 5px;
-  left: 1px;
+  top: -4px;
+  left: 2px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 0px;
+  top: 3px;
   left: -1px;
 }
 .outcomes__wrapper .outcomes__buttons {
