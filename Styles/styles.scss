@@ -1056,6 +1056,10 @@ footer#main-footer {
   margin-top: 15vh;
 }
 
+@media screen and (max-width: 1200px) {
+  margin-top: 8vh;
+}
+
 // Header Code
 header#main-header {
   position: fixed;
