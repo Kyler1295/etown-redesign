@@ -1057,7 +1057,9 @@ footer#main-footer {
 }
 
 @media screen and (max-width: 1200px) {
-  margin-top: 8vh;
+  #main-content {
+    margin-top: 8vh;
+  }
 }
 
 // Header Code
