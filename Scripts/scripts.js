@@ -59,9 +59,19 @@ const switchAudience = (audience) => {
       audienceSection.classList.add('audience-fadeIn')
     }
   })
+  localStorage.setItem("audience", audience)
 }
 
 select.addEventListener('change', () => switchAudience(select.value))
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem("audience") === null) {
+    localStorage.setItem("audience", select.value)
+  }
+  let audience = localStorage.getItem("audience")
+  switchAudience(audience)
+  select.value = audience
+})
 
 // Header Code
 // Main Header
