@@ -68,12 +68,14 @@ select.addEventListener('change', () => switchAudience(select.value))
 const hamburger = document.querySelector('.hamburger')
 const expandedNav = document.querySelector('.secondary-navigation')
 const menu = document.querySelector('.menu')
-const close = document.querySelector('.close')
+const close = document.querySelector('.close-menu')
+const body = document.querySelector('body')
 
 hamburger.addEventListener('click', () => {
   expandedNav.classList.toggle("open")
   menu.classList.toggle("open")
-  close.classList.toggle("close")
+  close.classList.toggle("open")
+  body.classList.toggle("no-scroll")
 })
 
 // Internal Headers

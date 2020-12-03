@@ -42,6 +42,15 @@ $text-font: 1rem;
 }
 
 // Base Styles
+// Global
+body {
+  &.no-scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+
 // Text
 p,
 i,
@@ -1051,38 +1060,26 @@ footer#main-footer {
   }
 }
 
-// For Header Spacer
-#main-content {
-  margin-top: 15vh;
-}
-
-@media screen and (max-width: 1200px) {
-  #main-content {
-    margin-top: 13vh;
-  }
-}
 
 // Header Code
 header#main-header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100vw;
   z-index: 15;
-  .menu, .close {
+  .menu, .close-menu {
     display: none;
     &.open {
-      display: block;
+      display: flex;
       text-transform: uppercase;
     }
   }
-  height: 15vh;
+  height: 100%;
   nav.main-navigation {
     background-color: $dark-blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 13vh;
     .main-navigation__home {
       width: 13%;
       padding: 0 0 0 2%;
@@ -1135,7 +1132,7 @@ header#main-header {
   }
   .secondary-navigation {
     width: 100%;
-    min-height: 85vh;
+    min-height: 87vh;
     display: none;
     &:focus-within {
       .secondary-navigation {
@@ -1148,6 +1145,7 @@ header#main-header {
     }
     section {
       width: 50%;
+      height: 87vh;
     }
     .secondary-navigation__information {
       padding: 10%;
@@ -1180,6 +1178,7 @@ header#main-header {
       padding: 4%;
       margin: 0 auto;
       background: $white;
+      overflow-y: scroll;
       .secondary-navigation__sub-navs {
         border-bottom: 1px solid $gray;
         padding: 3% 0;
@@ -1268,12 +1267,13 @@ header#main-header {
 
 @media screen and (max-width: 1200px) {
   header#main-header {
-    height: 13vh;
+    overflow-y: scroll;
     nav.main-navigation {
       .main-navigation__home {
         width: 25%;
       }
       .main-navigation__links {
+        position: relative;
         li {
           display: none;
         }
@@ -1281,6 +1281,7 @@ header#main-header {
           position: absolute;
           top: 0;
           right: 0;
+          width: 25vw;
         }
       }
     }
@@ -1289,6 +1290,7 @@ header#main-header {
       flex-direction: column-reverse;
       section {
         width: 100%;
+        height: auto;
       }
     }
   }
@@ -1296,11 +1298,47 @@ header#main-header {
 
 @media screen and (max-width: 768px) {
   header#main-header {
+    nav.main-navigation {
+      height: 8vh;
+      .main-navigation__home {
+        width: 35%;
+        padding: 0 0 0 5%;
+      }
+      .main-navigation__links {
+        .hamburger {
+          color: $white;
+          background-color: $dark-blue;
+          right: 25px;
+          p {
+            align-items: center;
+            justify-content: center;
+          }
+          .menu-icon {
+            transform: translate(25%, 0%);
+          }
+        }
+      }
+    }
     .secondary-navigation {
       background: rgb(0,75,152);
       background: linear-gradient(180deg, rgba(0,75,152,1) 0%, rgba(10,34,64,1) 100%);
       section {
         background-color: transparent !important;
+        background: none !important;
+      }
+      .secondary-navigation__links {
+        .secondary-navigation__sub-navs {
+          color: $white;
+          .sub-navs__links {
+            ul {
+              li {
+                a {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
