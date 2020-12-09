@@ -50,6 +50,10 @@ body {
   }
 }
 
+img {
+  object-fit: contain;
+}
+
 
 // Text
 p,
@@ -170,6 +174,38 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  p,
+  i,
+  strong,
+  b {
+    font-size: $text-font * 1.2;
+    line-height: 32px;
+  }
+  h1 {
+    font-size: $header-font * 1.6;
+  }
+  
+  h2 {
+    font-size: $header-font * .8;
+  }
+  
+  h3 {
+    font-size: $header-font * .8;
+  }
+  
+  h4 {
+    font-size: $header-font * .5;
+  }
+  
+  h5 {
+    font-size: $header-font * .5;
+  }
+  
+  h6 {
+    font-size: $header-font * .5;
+  }
+}
 
 // buttons
 div[class*="buttons"] {
@@ -216,7 +252,7 @@ a[class*="button"] {
 
 @media screen and (min-width: 1200px) {
   a[class*="button"] {
-    padding: 2% 3%;
+    padding: 1.5% 3%;
     font-size: $text-font * 1.2;
   }
 }
@@ -496,7 +532,7 @@ div[class*="-background"] {
         .offset-events__heading {
           span {
             width: 10%;
-            font-size: 4rem;
+            font-size: 3rem;
             margin: 0;
           }
         }
@@ -535,10 +571,31 @@ div[class*="-background"] {
   .quick-links__wrapper {
     .offset-items__wrapper {
       .offset-events__wrapper {
-        height: 450px;
+        height: 400px;
       }
       .offset-audience__wrapper {
-        height: 450px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .quick-links__wrapper {
+    .offset-items__wrapper {
+      .offset-events__wrapper {
+        height: 350px;
+      }
+      .offset-audience__wrapper {
+        padding: 3%;
+        height: 350px;
+        label {
+          display: block;
+        }
+        select {
+          padding: 4% 5%;
+          width: 60%;
+        }
       }
     }
   }
@@ -602,7 +659,7 @@ div[class*="-background"] {
 
 @media screen and (min-width: 1200px) {
   .tour-video__wrapper {
-    height: 70vh;
+    height: 60vh;
   }
 }
 
@@ -961,6 +1018,8 @@ div[class*="-background"] {
     justify-content: space-around;
     .news__section {
       width: 40%;
+      position: relative;
+      z-index: 15;
     }
   }
 }
@@ -1120,9 +1179,10 @@ header#main-header {
           font-weight: bold;
         }
         .menu-icon {
+          @include center-center();
           font-size: 2rem;
-          transform: translate(25%, 25%);
           font-weight: bold;
+          margin: 0 0 0 5px;
         }
         &:focus {
           outline: none;
@@ -1132,7 +1192,7 @@ header#main-header {
   }
   .secondary-navigation {
     width: 100%;
-    min-height: 87vh;
+    min-height: 92vh;
     display: none;
     &:focus-within {
       .secondary-navigation {
@@ -1168,6 +1228,9 @@ header#main-header {
             font-weight: normal;
           }
         }
+      }
+      select {
+        display: none;
       }
       input {
         width: 85%;
@@ -1250,15 +1313,26 @@ header#main-header {
           columns: 2;
           li {
             list-style-type: none;
-            font-size: $text-font * 1.5;
             margin: 0 0 15px 0;
             a {
               text-decoration: none;
               color: $primary-blue;
-              font-size: $text-font * 1.5;
-              font-weight: normal;
+              font-size: $text-font * 1;
+              font-weight: 200;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  header#main-header {
+    nav.main-navigation {
+      .main-navigation__links {
+        .hamburger {
+          width: 25vw;
         }
       }
     }
@@ -1281,13 +1355,14 @@ header#main-header {
           position: absolute;
           top: 0;
           right: 0;
-          width: 25vw;
+          width: 20vw;
         }
       }
     }
     .secondary-navigation {
       flex-wrap: wrap;
       flex-direction: column-reverse;
+      justify-content: flex-end;
       section {
         width: 100%;
         height: auto;
@@ -1313,9 +1388,6 @@ header#main-header {
             align-items: center;
             justify-content: center;
           }
-          .menu-icon {
-            transform: translate(25%, 0%);
-          }
         }
       }
     }
@@ -1326,7 +1398,28 @@ header#main-header {
         background-color: transparent !important;
         background: none !important;
       }
+      .secondary-navigation__information {
+        .secondary-navigation__audiences {
+          display: none;
+        }
+        select#find-information {
+          display: block;
+          width: 100%;
+        }
+      }
       .secondary-navigation__links {
+        .secondary-navigation__resources {
+          h6 { 
+            color: $white;
+          }
+          ul {
+            li {
+              a {
+                color: $white;
+              }
+              }
+          }
+        }
         .secondary-navigation__sub-navs {
           color: $white;
           .sub-navs__links {

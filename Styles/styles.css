@@ -9,6 +9,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
+img {
+  object-fit: contain;
+}
+
 p,
 i,
 strong,
@@ -127,6 +131,39 @@ b {
     font-size: 1.96rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  p,
+i,
+strong,
+b {
+    font-size: 1.2rem;
+    line-height: 32px;
+  }
+
+  h1 {
+    font-size: 4.48rem;
+  }
+
+  h2 {
+    font-size: 2.24rem;
+  }
+
+  h3 {
+    font-size: 2.24rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  h6 {
+    font-size: 1.4rem;
+  }
+}
 div[class*=buttons] {
   margin: 5% 0;
 }
@@ -171,7 +208,7 @@ a[class*=button] {
 }
 @media screen and (min-width: 1200px) {
   a[class*=button] {
-    padding: 2% 3%;
+    padding: 1.5% 3%;
     font-size: 1.2rem;
   }
 }
@@ -406,7 +443,7 @@ div[class*=-background] {
   }
   .quick-links__wrapper .offset-items__wrapper .offset-events__wrapper .offset-events__heading span {
     width: 10%;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
   }
   .quick-links__wrapper .offset-items__wrapper .offset-events__wrapper .offset-events__buttons {
@@ -436,10 +473,26 @@ div[class*=-background] {
 }
 @media screen and (min-width: 1920px) {
   .quick-links__wrapper .offset-items__wrapper .offset-events__wrapper {
-    height: 450px;
+    height: 400px;
   }
   .quick-links__wrapper .offset-items__wrapper .offset-audience__wrapper {
-    height: 450px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .quick-links__wrapper .offset-items__wrapper .offset-events__wrapper {
+    height: 350px;
+  }
+  .quick-links__wrapper .offset-items__wrapper .offset-audience__wrapper {
+    padding: 3%;
+    height: 350px;
+  }
+  .quick-links__wrapper .offset-items__wrapper .offset-audience__wrapper label {
+    display: block;
+  }
+  .quick-links__wrapper .offset-items__wrapper .offset-audience__wrapper select {
+    padding: 4% 5%;
+    width: 60%;
   }
 }
 .tour-video__wrapper {
@@ -493,7 +546,7 @@ div[class*=-background] {
 }
 @media screen and (min-width: 1200px) {
   .tour-video__wrapper {
-    height: 70vh;
+    height: 60vh;
   }
 }
 .why-etown__wrapper .audience-items__item {
@@ -581,20 +634,20 @@ div[class*=-background] {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: 5px;
-  left: 1px;
+  top: 1px;
+  left: 4px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 3px;
-  left: 1px;
+  top: 0px;
+  left: -4px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -1px;
-  left: 5px;
+  top: -4px;
+  left: -4px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 3px;
-  left: 3px;
+  top: -4px;
+  left: -4px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -802,6 +855,8 @@ div[class*=-background] {
   }
   .news__wrapper .news__section {
     width: 40%;
+    position: relative;
+    z-index: 15;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -956,16 +1011,19 @@ header#main-header nav.main-navigation .main-navigation__links .hamburger p {
   font-weight: bold;
 }
 header#main-header nav.main-navigation .main-navigation__links .hamburger .menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
-  transform: translate(25%, 25%);
   font-weight: bold;
+  margin: 0 0 0 5px;
 }
 header#main-header nav.main-navigation .main-navigation__links .hamburger:focus {
   outline: none;
 }
 header#main-header .secondary-navigation {
   width: 100%;
-  min-height: 87vh;
+  min-height: 92vh;
   display: none;
 }
 header#main-header .secondary-navigation:focus-within .secondary-navigation {
@@ -1000,6 +1058,9 @@ header#main-header .secondary-navigation .secondary-navigation__information ul l
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: normal;
+}
+header#main-header .secondary-navigation .secondary-navigation__information select {
+  display: none;
 }
 header#main-header .secondary-navigation .secondary-navigation__information input {
   width: 85%;
@@ -1084,16 +1145,20 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
 }
 header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__resources ul li {
   list-style-type: none;
-  font-size: 1.5rem;
   margin: 0 0 15px 0;
 }
 header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__resources ul li a {
   text-decoration: none;
   color: #004B98;
-  font-size: 1.5rem;
-  font-weight: normal;
+  font-size: 1rem;
+  font-weight: 200;
 }
 
+@media screen and (max-width: 1400px) {
+  header#main-header nav.main-navigation .main-navigation__links .hamburger {
+    width: 25vw;
+  }
+}
 @media screen and (max-width: 1200px) {
   header#main-header {
     overflow-y: scroll;
@@ -1111,11 +1176,12 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
     position: absolute;
     top: 0;
     right: 0;
-    width: 25vw;
+    width: 20vw;
   }
   header#main-header .secondary-navigation {
     flex-wrap: wrap;
     flex-direction: column-reverse;
+    justify-content: flex-end;
   }
   header#main-header .secondary-navigation section {
     width: 100%;
@@ -1139,9 +1205,6 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
     align-items: center;
     justify-content: center;
   }
-  header#main-header nav.main-navigation .main-navigation__links .hamburger .menu-icon {
-    transform: translate(25%, 0%);
-  }
   header#main-header .secondary-navigation {
     background: #004b98;
     background: linear-gradient(180deg, #004b98 0%, #0a2240 100%);
@@ -1149,6 +1212,19 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
   header#main-header .secondary-navigation section {
     background-color: transparent !important;
     background: none !important;
+  }
+  header#main-header .secondary-navigation .secondary-navigation__information .secondary-navigation__audiences {
+    display: none;
+  }
+  header#main-header .secondary-navigation .secondary-navigation__information select#find-information {
+    display: block;
+    width: 100%;
+  }
+  header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__resources h6 {
+    color: #FFFFFF;
+  }
+  header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__resources ul li a {
+    color: #FFFFFF;
   }
   header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__sub-navs {
     color: #FFFFFF;

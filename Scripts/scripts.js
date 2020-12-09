@@ -37,7 +37,7 @@ prevArrow.addEventListener('click', () => switchOutcomes(-1))
 nextArrow.addEventListener('click', () => switchOutcomes(1))
 
 // Audience Javascript
-const select = document.querySelector('select')
+const select = document.querySelector('#audience')
 const audienceSections = document.querySelectorAll('.audience-items__subset')
 
 // Changes the Audience
