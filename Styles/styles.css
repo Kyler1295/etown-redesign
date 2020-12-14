@@ -635,19 +635,19 @@ div[class*=-background] {
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
   top: 1px;
-  left: 4px;
+  left: 3px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 0px;
-  left: -4px;
+  top: 4px;
+  left: 1px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -4px;
-  left: -4px;
+  top: -1px;
+  left: 4px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: -4px;
-  left: -4px;
+  top: 5px;
+  left: 2px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -888,22 +888,33 @@ footer#main-footer {
   padding: 15% 7%;
   position: relative;
 }
-footer#main-footer .big-e {
+footer#main-footer::after {
+  content: "";
+  background-image: url("../images/E.289-WebFooterBackground.png");
+  background-size: contain;
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
+  width: 100%;
   height: 100%;
-  opacity: 0.75%;
+  z-index: 1;
+  background-repeat: no-repeat;
 }
 footer#main-footer li {
   list-style-type: none;
+  z-index: 2;
+  position: relative;
 }
 footer#main-footer li a {
   color: #FFFFFF;
   text-decoration: none;
+  z-index: 2;
+  position: relative;
 }
 footer#main-footer .logo-contact {
   grid-area: logo-contact;
+  z-index: 2;
+  position: relative;
 }
 footer#main-footer .logo-contact img {
   margin: 10% 0 0 0;
@@ -923,13 +934,19 @@ footer#main-footer .logo-contact .contact .social .icons p {
 }
 footer#main-footer .resources {
   grid-area: resources;
+  z-index: 2;
+  position: relative;
 }
 footer#main-footer .resources h6 {
   text-transform: uppercase;
   margin: 7% 0 15%;
+  z-index: 2;
+  position: relative;
 }
 footer#main-footer .resources .resource-links {
   display: none;
+  z-index: 2;
+  position: relative;
 }
 footer#main-footer .disclaimer {
   margin: 7% 0;
@@ -939,12 +956,76 @@ footer#main-footer .disclaimer li, footer#main-footer .disclaimer p {
   margin: 2% 0;
 }
 
+@media screen and (min-width: 768px) {
+  footer#main-footer:after {
+    width: 50%;
+    height: 100%;
+  }
+  footer#main-footer .logo-contact img {
+    width: 35%;
+    margin: 0;
+  }
+  footer#main-footer .connect {
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer#main-footer .connect .contact {
+    margin: 0;
+  }
+  footer#main-footer .resources h6 {
+    margin: 2% 0 5%;
+  }
+  footer#main-footer .resources .resource-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer#main-footer .resources .resource-links ul li {
+    margin: 0 0 35px 0;
+  }
+  footer#main-footer .resources .resource-links ul li a {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  footer#main-footer .disclaimer ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer#main-footer .disclaimer ul li {
+    margin-right: 15px;
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 1200px) {
   footer#main-footer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "logo-contact resources resources resources" "logo-contact resources resources resources" "disclaimer disclaimer disclaimer disclaimer";
+    display: flex;
+    padding: 5%;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  footer#main-footer:after {
+    width: 25%;
+    height: 100%;
+  }
+  footer#main-footer .logo-contact {
+    width: 30%;
+  }
+  footer#main-footer .logo-contact img {
+    width: 50%;
+    margin: 0;
+  }
+  footer#main-footer .logo-contact .connect {
+    flex-direction: column;
+  }
+  footer#main-footer .resources {
+    width: 70%;
+  }
+  footer#main-footer .disclaimer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 header#main-header {
@@ -1213,6 +1294,16 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
     background-color: transparent !important;
     background: none !important;
   }
+  header#main-header .secondary-navigation .secondary-navigation__information #find-information {
+    background: none;
+    padding: 5% 3%;
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3DB5E6;
+  }
   header#main-header .secondary-navigation .secondary-navigation__information .secondary-navigation__audiences {
     display: none;
   }
@@ -1233,6 +1324,12 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
     color: #FFFFFF;
   }
 }
+#majors-search__wrapper {
+  background: #004B98;
+  width: 100vw;
+  padding: 5%;
+}
+
 .outcome-fadeIn {
   animation-name: fadeIn;
   animation-duration: 1s;

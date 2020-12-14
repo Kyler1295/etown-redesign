@@ -1056,22 +1056,33 @@ footer#main-footer {
   background: $dark-blue;
   padding: 15% 7%;
   position: relative;
-  .big-e {
+  &::after {
+    content: '';
+    background-image: url('../images/E.289-WebFooterBackground.png');
+    background-size: contain;
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
+    width: 100%;
     height: 100%;
-    opacity: .75%; 
+    z-index: 1;
+    background-repeat: no-repeat;
   }
   li {
     list-style-type: none;
+    z-index: 2;
+    position: relative;
     a {
       color: $white;
       text-decoration: none;
+      z-index: 2;
+      position: relative;
     }
   }
   .logo-contact { 
     grid-area: logo-contact;
+    z-index: 2;
+    position: relative;
     img {
       margin: 10% 0 0 0;
       width: 60%;
@@ -1091,12 +1102,18 @@ footer#main-footer {
   }
   .resources { 
     grid-area: resources; 
+    z-index: 2;
+    position: relative;
     h6 {
       text-transform: uppercase;
       margin: 7% 0 15%;
+      z-index: 2;
+      position: relative;
     }
     .resource-links {
       display: none;
+      z-index: 2;
+      position: relative;
     }
   }
   .disclaimer {
@@ -1107,18 +1124,90 @@ footer#main-footer {
     }
   }
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 768px) {
   footer#main-footer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-    "logo-contact resources resources resources"
-    "logo-contact resources resources resources"
-    "disclaimer disclaimer disclaimer disclaimer";
+    &:after {
+      width: 50%;
+      height: 100%;
+    }
+    .logo-contact {
+      img {
+        width: 35%;
+        margin: 0;
+      }
+    }
+    .connect {
+      margin: 50px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      .contact {
+        margin: 0;
+      }
+    }
+    .resources {
+      h6 {
+        margin: 2% 0 5%;
+      }
+      .resource-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        ul {
+          li {
+            margin: 0 0 35px 0;
+            a {
+              font-size: $text-font * 1.5;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .disclaimer {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          margin-right: 15px;
+          font-size: $text-font * 2;
+        }
+      }
+    }
   }
 }
 
+@media screen and (min-width: 1200px) {
+  footer#main-footer {
+    display: flex;
+    padding: 5%;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    &:after {
+      width: 25%;
+      height: 100%;
+    }
+    .logo-contact {
+      width: 30%;
+      img {
+        width: 50%;
+        margin: 0;
+      }
+      .connect {
+        flex-direction: column;
+      }
+    }
+    .resources {
+      width: 70%;
+    }
+    .disclaimer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
 
 // Header Code
 header#main-header {
@@ -1399,6 +1488,16 @@ header#main-header {
         background: none !important;
       }
       .secondary-navigation__information {
+        #find-information {
+          background: none;
+          padding: 5% 3%;
+          margin: 0 0 15px 0;
+          font-size: $text-font * 1.2;
+          color: $white;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid $light-blue;
+        }
         .secondary-navigation__audiences {
           display: none;
         }
@@ -1435,6 +1534,13 @@ header#main-header {
       }
     }
   }
+}
+
+// Accordions
+#majors-search__wrapper {
+  background: $primary-blue;
+  width: 100vw;
+  padding: 5%;
 }
 
 // Animation Classes
