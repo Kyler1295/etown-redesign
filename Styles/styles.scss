@@ -1459,6 +1459,9 @@ header#main-header {
 
       select {
         display: none;
+        option {
+          color: $black !important;
+        }
       }
 
       input {
