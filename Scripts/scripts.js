@@ -99,3 +99,41 @@ subNavs.forEach((subNav) => {
     }
   })
 })
+
+
+// Social Section
+const socialItems = document.querySelectorAll('.social-block')
+const socialPrevArrow = document.querySelector('.social-prev-arrow')
+const socialNextArrow = document.querySelector('.social-next-arrow')
+
+let currentSocial = 0;
+
+// Changes the Socials
+const switchSocials = (change) => {
+  // For Removing Classes
+  let tempSocial = currentSocial
+  // Checks if array is at the start or end
+  if (currentSocial + change < 0) {
+    currentSocial = socialItems.length - 1; 
+  } else if (currentSocial + change > socialItems.length - 1) {
+    currentSocial = 0;
+  } else {
+    currentSocial = currentSocial + change
+  }
+  // Loops through Socials and removes/adds the correct classes
+  socialItems.forEach((Social, index) => {
+    if (index === currentSocial) {
+      Social.classList.remove('hidden')
+      Social.classList.remove('Social-fadeOut')
+      Social.classList.add('Social-fadeIn')
+    } 
+    if (index === tempSocial) {
+      Social.classList.remove('Social-fadeIn')
+      Social.classList.add('Social-fadeOut')
+      Social.classList.add('hidden')
+    }
+  });
+}
+
+socialPrevArrow.addEventListener('click', () => switchSocials(-1))
+socialNextArrow.addEventListener('click', () => switchSocials(1))
