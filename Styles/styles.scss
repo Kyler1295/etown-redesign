@@ -688,6 +688,12 @@ div[class*="-background"] {
   }
 }
 
+@media screen and (min-width: 1950px) {
+  .tour-video__wrapper {
+    height: 50vh;
+  }
+}
+
 // Why Etown
 .why-etown__wrapper {
   .audience-items__item {
