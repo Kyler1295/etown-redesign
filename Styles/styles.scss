@@ -459,6 +459,7 @@ div[class*="-background"] {
         padding: 4%;
         font-size: 1.25rem;
         font-family: tablet-gothic, sans-serif;
+        color: $black;
       }
     }
   }
@@ -1459,9 +1460,6 @@ header#main-header {
 
       select {
         display: none;
-        option {
-          color: $black !important;
-        }
       }
 
       input {
