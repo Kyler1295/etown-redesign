@@ -1295,13 +1295,14 @@ footer#main-footer {
 @media screen and (min-width: 1200px) {
   footer#main-footer {
     display: flex;
-    padding: 5%;
+    padding: 5% 5% 0 5%;
     flex-wrap: wrap;
     align-items: flex-end;
 
     &:after {
       width: 25%;
       height: 100%;
+      right: -5%;
     }
 
     .logo-contact {
@@ -1326,6 +1327,13 @@ footer#main-footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin: 0;
+      font-size: $text-font;
+      ul {
+        li {
+          font-size: $text-font;
+        }
+      }
     }
   }
 }
