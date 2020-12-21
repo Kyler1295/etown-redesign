@@ -684,7 +684,7 @@ div[class*="-background"] {
 
 @media screen and (min-width: 1200px) {
   .tour-video__wrapper {
-    height: 60vh;
+    height: 40vh;
   }
 }
 
@@ -1145,7 +1145,7 @@ footer#main-footer {
   width: 100vw;
   min-height: 40vh;
   background: $dark-blue;
-  padding: 15% 7%;
+  padding: 15% 7% 0;
   position: relative;
 
   &::after {
@@ -1221,7 +1221,7 @@ footer#main-footer {
   }
 
   .disclaimer {
-    margin: 7% 0;
+    margin: 7% 0 0;
     grid-area: disclaimer;
 
     li,
@@ -1234,7 +1234,7 @@ footer#main-footer {
 @media screen and (min-width: 768px) {
   footer#main-footer {
     &:after {
-      width: 50%;
+      width: 75%;
       height: 100%;
     }
 
