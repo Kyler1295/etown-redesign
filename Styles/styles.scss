@@ -141,6 +141,14 @@ a {
   color: $black;
 }
 
+.fas {
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 3px;
+  height: 100%;
+}
+
 @media screen and (min-width: 768px) {
 
   p,
@@ -235,6 +243,7 @@ a[class*="button"] {
   border-radius: 50px;
   margin: 0 2% 5% 0;
   display: inline-flex;
+  align-items: center;
 }
 
 .callout {
@@ -242,6 +251,8 @@ a[class*="button"] {
   color: $primary-blue;
   text-transform: uppercase;
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -274,7 +285,7 @@ div[class*="circle"] {
   height: 150px;
   border-radius: 100%;
   @include center-center();
-  font-size: 4rem;
+  font-size: 3.25rem;
   font-size: bold;
   position: relative;
   margin: 0 0 10% 0;
@@ -425,6 +436,13 @@ div[class*="-background"] {
       .offset-events__heading {
         display: flex;
         margin: 0 0 15px 0;
+
+        .academic-days-calendar {
+          font-size: 30px;
+          align-items: center;
+          display: flex;
+          margin: 0 10px 0 0;
+        }
 
         span {
           margin: 3px 5px 0 0;
@@ -605,12 +623,12 @@ div[class*="-background"] {
   .quick-links__wrapper {
     .offset-items__wrapper {
       .offset-events__wrapper {
-        height: 350px;
+        height: 450px;
       }
 
       .offset-audience__wrapper {
         padding: 3%;
-        height: 350px;
+        height: 450px;
 
         label {
           display: block;
@@ -937,19 +955,23 @@ div[class*="-background"] {
   .social-block__wrapper {
     width: 90%;
     @include center-center();
+
     .social-block {
       display: block;
       width: 250px;
       height: 250px;
       position: relative;
+
       &.hidden {
         display: none;
       }
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
+
       .social-block__content {
         width: 100%;
         height: 100%;
@@ -960,29 +982,36 @@ div[class*="-background"] {
         color: $white;
         @include center-center();
         flex-direction: column;
+
         p {
           color: $white;
+          width: 90%;
+          margin: 0 auto;
         }
+
         h4 {
           margin: 15px 0;
           font-size: $text-font * 2;
         }
       }
-        .social-callout {
-          display: flex;
-          position: absolute;
-          bottom: 5px;
-          left: 0;
-          width: 100%;
-          padding: 0 5%;
-          img {
-            width: 30px;
-          }
-          p {
-            color: $white;
-            font-weight: bold;
-            margin: 0 0 0 5px;
-          }
+
+      .social-callout {
+        display: flex;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        padding: 0 5%;
+
+        img {
+          width: 30px;
+        }
+
+        p {
+          color: $white;
+          font-weight: bold;
+          margin: 0 0 0 5px;
+        }
       }
     }
   }
@@ -1012,17 +1041,21 @@ div[class*="-background"] {
     h2 {
       width: 100%;
     }
+
     .social-block__wrapper {
       flex-wrap: wrap;
+
       .social-block {
         width: 400px;
         height: 400px;
+
         &.hidden {
           display: flex;
         }
       }
     }
   }
+
   .social-prev-arrow,
   .social-next-arrow {
     display: none;
@@ -1035,6 +1068,7 @@ div[class*="-background"] {
       .social-block {
         width: 500px;
         height: 500px;
+
         &.hidden {
           display: flex;
         }
@@ -1049,6 +1083,7 @@ div[class*="-background"] {
       .social-block {
         width: 600px;
         height: 600px;
+
         &.hidden {
           display: flex;
         }
@@ -1082,6 +1117,11 @@ div[class*="-background"] {
 
   .event {
     margin: 0 0 25px 0;
+
+    strong {
+      color: $white;
+      margin: 0 0 20px 0;
+    }
 
     div {
       padding: 0 1%;
@@ -1329,6 +1369,7 @@ footer#main-footer {
       justify-content: space-between;
       margin: 0;
       font-size: $text-font;
+
       ul {
         li {
           font-size: $text-font;
@@ -1351,6 +1392,13 @@ header#main-header {
     &.open {
       display: flex;
       text-transform: uppercase;
+      align-items: center;
+      font-size: 20px;
+
+      i {
+        font-size: 24px;
+        margin: 0 0 0 5px;
+      }
     }
   }
 
@@ -1643,6 +1691,10 @@ header#main-header {
 
 @media screen and (max-width: 768px) {
   header#main-header {
+    .menu, .close
+    &.open {
+      font-size: 16px;
+    }
     nav.main-navigation {
       height: 8vh;
 
@@ -1655,8 +1707,7 @@ header#main-header {
         .hamburger {
           color: $white;
           background-color: $dark-blue;
-          right: 25px;
-
+          right: 50px;
           p {
             align-items: center;
             justify-content: center;
@@ -1669,10 +1720,7 @@ header#main-header {
       background: rgb(0, 75, 152);
       background: linear-gradient(180deg, rgba(0, 75, 152, 1) 0%, rgba(10, 34, 64, 1) 100%);
 
-      section {
-        background-color: transparent !important;
-        background: none !important;
-      }
+      
 
       .secondary-navigation__information {
         #find-information {
@@ -1699,26 +1747,26 @@ header#main-header {
       .secondary-navigation__links {
         .secondary-navigation__resources {
           h6 {
-            color: $white;
+            color: $dark-blue;
           }
 
           ul {
             li {
               a {
-                color: $white;
+                color: $dark-blue;
               }
             }
           }
         }
 
         .secondary-navigation__sub-navs {
-          color: $white;
+          color: $dark-blue;
 
           .sub-navs__links {
             ul {
               li {
                 a {
-                  color: $white;
+                  color: $dark-blue;
                 }
               }
             }

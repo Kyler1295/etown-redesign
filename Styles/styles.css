@@ -98,6 +98,14 @@ a {
   color: #000000;
 }
 
+.fas {
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 3px;
+  height: 100%;
+}
+
 @media screen and (min-width: 768px) {
   p,
 i,
@@ -187,6 +195,7 @@ a[class*=button] {
   border-radius: 50px;
   margin: 0 2% 5% 0;
   display: inline-flex;
+  align-items: center;
 }
 
 .callout {
@@ -194,6 +203,8 @@ a[class*=button] {
   color: #004B98;
   text-transform: uppercase;
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -224,7 +235,7 @@ div[class*=circle] {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 3.25rem;
   font-size: bold;
   position: relative;
   margin: 0 0 10% 0;
@@ -352,6 +363,12 @@ div[class*=-background] {
 .quick-links__wrapper .offset-items__wrapper .offset-events__wrapper .offset-events__heading {
   display: flex;
   margin: 0 0 15px 0;
+}
+.quick-links__wrapper .offset-items__wrapper .offset-events__wrapper .offset-events__heading .academic-days-calendar {
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  margin: 0 10px 0 0;
 }
 .quick-links__wrapper .offset-items__wrapper .offset-events__wrapper .offset-events__heading span {
   margin: 3px 5px 0 0;
@@ -482,11 +499,11 @@ div[class*=-background] {
 }
 @media screen and (min-width: 2200px) {
   .quick-links__wrapper .offset-items__wrapper .offset-events__wrapper {
-    height: 350px;
+    height: 450px;
   }
   .quick-links__wrapper .offset-items__wrapper .offset-audience__wrapper {
     padding: 3%;
-    height: 350px;
+    height: 450px;
   }
   .quick-links__wrapper .offset-items__wrapper .offset-audience__wrapper label {
     display: block;
@@ -640,20 +657,20 @@ div[class*=-background] {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: 3px;
-  left: -1px;
+  top: 4px;
+  left: 5px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: -3px;
+  top: 1px;
   left: -1px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -2px;
-  left: 0px;
+  top: -3px;
+  left: -4px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 2px;
-  left: 5px;
+  top: -2px;
+  left: -3px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -781,6 +798,8 @@ div[class*=-background] {
 }
 .social-block__container .social-block__wrapper .social-block .social-block__content p {
   color: #FFFFFF;
+  width: 90%;
+  margin: 0 auto;
 }
 .social-block__container .social-block__wrapper .social-block .social-block__content h4 {
   margin: 15px 0;
@@ -877,6 +896,10 @@ div[class*=-background] {
 }
 .news__wrapper .event {
   margin: 0 0 25px 0;
+}
+.news__wrapper .event strong {
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
 }
 .news__wrapper .event div {
   padding: 0 1%;
@@ -1091,6 +1114,13 @@ header#main-header .menu.open,
 header#main-header .close-menu.open {
   display: flex;
   text-transform: uppercase;
+  align-items: center;
+  font-size: 20px;
+}
+header#main-header .menu.open i,
+header#main-header .close-menu.open i {
+  font-size: 24px;
+  margin: 0 0 0 5px;
 }
 header#main-header nav.main-navigation {
   background-color: #0A2240;
@@ -1321,6 +1351,9 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
   }
 }
 @media screen and (max-width: 768px) {
+  header#main-header .menu, .close header#main-header.open {
+    font-size: 16px;
+  }
   header#main-header nav.main-navigation {
     height: 8vh;
   }
@@ -1331,7 +1364,7 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
   header#main-header nav.main-navigation .main-navigation__links .hamburger {
     color: #FFFFFF;
     background-color: #0A2240;
-    right: 25px;
+    right: 50px;
   }
   header#main-header nav.main-navigation .main-navigation__links .hamburger p {
     align-items: center;
@@ -1340,10 +1373,6 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
   header#main-header .secondary-navigation {
     background: #004b98;
     background: linear-gradient(180deg, #004b98 0%, #0a2240 100%);
-  }
-  header#main-header .secondary-navigation section {
-    background-color: transparent !important;
-    background: none !important;
   }
   header#main-header .secondary-navigation .secondary-navigation__information #find-information {
     background: none;
@@ -1363,16 +1392,16 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
     width: 100%;
   }
   header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__resources h6 {
-    color: #FFFFFF;
+    color: #0A2240;
   }
   header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__resources ul li a {
-    color: #FFFFFF;
+    color: #0A2240;
   }
   header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__sub-navs {
-    color: #FFFFFF;
+    color: #0A2240;
   }
   header#main-header .secondary-navigation .secondary-navigation__links .secondary-navigation__sub-navs .sub-navs__links ul li a {
-    color: #FFFFFF;
+    color: #0A2240;
   }
 }
 #majors-search__wrapper {
