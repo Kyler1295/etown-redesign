@@ -314,7 +314,7 @@ div[class*="circle"] {
 
 
 // width setter
-div[class*="-background"] {
+[class*="-background"] {
   padding: 15% 10%;
 }
 
@@ -1895,5 +1895,93 @@ header#main-header {
       outline: none;
       text-decoration: underline;
     }
+  }
+}
+
+
+
+
+// Majors Minors Page Code
+.majors-intro {
+  padding: 5% 10%;
+  h1 {
+    font-weight: bold;
+  }
+  h6 {
+    color: $primary-blue;
+    margin: 1% 0 0 0;
+    font-size: $header-font * .6;
+  }
+  p {
+    font-size: $text-font * 1.4;
+  }
+}
+
+section.input_wrapper {
+  padding: 2.5% 5vw;
+  .shownInputs {
+    padding: 0 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .searchInput {
+      width: 40%;
+      padding: 3% 0;
+      margin: 0 5% 0 0;
+      border-right: 2px solid $light-blue;
+      label {
+        font-family: clarendon-text-pro, serif;
+        font-size: $text-font * 1.6;
+        margin: 0 5% 0 0;
+      }
+      input {
+        width: 50%;
+        padding: 2% 5%;
+      }
+    }
+  }
+  .toggleInputs {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    cursor: pointer;
+    h5 {
+      margin: 0 2% 0 0;
+    }
+    .filterCircle {
+      width: 40px;
+      height: 40px;
+      border: 1px solid $light-blue;
+      border-radius: 100%;
+      color: $light-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 250ms ease-in;
+      &:hover {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .hiddenInputs {
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+}
+
+
+.accordion_wrapper {
+  &.hidden {
+    display: none;
+  }
+  &.open {
+    .accordion_inner {
+      display: block;
+    }
+  }
+  .accordion_inner {
+    display: none;
   }
 }
