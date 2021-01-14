@@ -199,38 +199,93 @@
           <input type="text" class="programSearch" id="programSearch" name="programs">
         </div>
         <div class="toggleInputs">
-          <h5>Find your program with filters</h5><div class="filterCircle"><i class="fas fa-plus"></i></div>
+          <h5>Find your program with filters</h5>
+          <div class="filterCircle"><i class="fas fa-plus"></i></div>
         </div>
       </div>
 
       <!-- Hidden Inputs -->
-      <div class="hiddenInputs">
+      <div class="hiddenInputs columns">
 
         <!-- Program Type Inputs -->
-        <p>Program Type</p>
-        <input type="radio" class="program-type" id="major" name="program-type" value="major">
-        <label for="major">Major</label><br>
-        <input type="radio" class="program-type" id="minor" name="program-type" value="minor">
-        <label for="minor">Minor</label><br>
-        <input type="radio" class="program-type" id="certificate" name="program-type" value="certificate">
-        <label for="certificate">Certificate</label>
+        <div class="column">
+          <p>Program Type</p>
+          <hr style="border-bottom: 1px solid white; width: 90%;" />
+          <div class="inputWrapper">
+            <input type="radio" class="program-type" id="undergraduatemajors" name="program-type" value="undergraduatemajors">
+            <label for="undergraduatemajors">Undergraduate Majors</label><br>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="program-type" id="undergraduateminors" name="program-type" value="undergraduateminors">
+            <label for="undergraduateminors">Undergraduate Minors</label><br>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="program-type" id="undergraduateconcentrations" name="program-type" value="undergraduateconcentrations">
+            <label for="undergraduateconcentrations">Undergraduate Concentrations</label>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="program-type" id="jointdegreeprograms" name="program-type" value="jointdegreeprograms">
+            <label for="jointdegreeprograms">Joint Degree Programs</label>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="program-type" id="preprofessionalprograms" name="program-type" value="preprofessionalprograms">
+            <label for="preprofessionalprograms">Pre-Professional Programs</label>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="program-type" id="graduateprograms" name="program-type" value="graduateprograms">
+            <label for="graduateprograms">Graduate Programs</label>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="program-type" id="scps" name="program-type" value="scps">
+            <label for="scps">School of Continuing &amp; Professional Studies</label>
+          </div>
+        </div>
 
         <!-- Areas of Study Inputs -->
-        <p>Areas of Study</p>
-        <input type="radio" class="area-of-study" id="business" name="area-of-study" value="business">
-        <label for="business">Business</label><br>
-        <input type="radio" class="area-of-study" id="health" name="area-of-study" value="health">
-        <label for="health">Health</label><br>
-        <input type="radio" class="area-of-study" id="sciences" name="area-of-study" value="sciences">
-        <label for="sciences">Sciences</label>
+        <div class="column">
+          <p>Areas of Study</p>
+          <hr style="border-bottom: 1px solid white; width: 90%;" />
+          <div class="inputWrapper">
+            <input type="radio" class="area-of-study" id="artsandhumanities" name="area-of-study" value="artsandhumanities">
+            <label for="artsandhumanities">Arts &amp; Humanities</label><br>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="area-of-study" id="business" name="area-of-study" value="business">
+            <label for="business">Business</label><br>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="area-of-study" id="scps" name="area-of-study" value="scps">
+            <label for="scps">Continuing &amp; Professional Studies</label><br>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="area-of-study" id="engineering" name="area-of-study" value="engineering">
+            <label for="engineering">Engineering, Computer Science, Math</label><br>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="area-of-study" id="humanandhealthprofessions" name="area-of-study" value="humanandhealthprofessions">
+            <label for="humanandhealthprofessions">Human &amp; Health Professions</label><br>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="area-of-study" id="publicservice" name="area-of-study" value="publicservice">
+            <label for="publicservice">Public Service</label><br>
+          </div>
+          <div class="inputWrapper">
+            <input type="radio" class="area-of-study" id="sciences" name="area-of-study" value="sciences">
+            <label for="sciences">Sciences</label><br>
+          </div>
+        </div>
 
         <!-- Undecided Input -->
-        <p>I'm Undecided</p>
-        <input type="radio" class="undecided" id="undecided" name="undecided" value="undecided">
-        <label for="undecided">Surprise me!</label>
-
-        <!-- Index Accordions -->
-        <button id="search-majors">Send It</button>
+        <div class="column">
+          <p>I'm Undecided</p>
+          <hr style="border-bottom: 1px solid white; width: 90%;" />
+          <div class="inputWrapper">
+            <input type="radio" class="undecided" id="undecided" name="undecided" value="undecided">
+            <label for="undecided">Surprise me!</label>
+          </div>
+          <!-- Index Accordions -->
+          <button id="search-majors">Apply Filters</button>
+        </div>
       </div>
     </section>
 

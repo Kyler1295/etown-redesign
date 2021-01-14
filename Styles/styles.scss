@@ -59,7 +59,8 @@ img {
 p,
 i,
 strong,
-b {
+b,
+input {
   font-family: tablet-gothic, sans-serif;
   font-size: $text-font;
   letter-spacing: 2px;
@@ -1691,10 +1692,12 @@ header#main-header {
 
 @media screen and (max-width: 768px) {
   header#main-header {
-    .menu, .close
-    &.open {
+
+    .menu,
+    .close &.open {
       font-size: 16px;
     }
+
     nav.main-navigation {
       height: 8vh;
 
@@ -1708,6 +1711,7 @@ header#main-header {
           color: $white;
           background-color: $dark-blue;
           right: 50px;
+
           p {
             align-items: center;
             justify-content: center;
@@ -1720,7 +1724,7 @@ header#main-header {
       background: rgb(0, 75, 152);
       background: linear-gradient(180deg, rgba(0, 75, 152, 1) 0%, rgba(10, 34, 64, 1) 100%);
 
-      
+
 
       .secondary-navigation__information {
         #find-information {
@@ -1904,14 +1908,17 @@ header#main-header {
 // Majors Minors Page Code
 .majors-intro {
   padding: 5% 10%;
+
   h1 {
     font-weight: bold;
   }
+
   h6 {
     color: $primary-blue;
     margin: 1% 0 0 0;
     font-size: $header-font * .6;
   }
+
   p {
     font-size: $text-font * 1.4;
   }
@@ -1919,35 +1926,42 @@ header#main-header {
 
 section.input_wrapper {
   padding: 2.5% 5vw;
+
   .shownInputs {
     padding: 0 5vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
     .searchInput {
       width: 40%;
       padding: 3% 0;
       margin: 0 5% 0 0;
       border-right: 2px solid $light-blue;
+
       label {
         font-family: clarendon-text-pro, serif;
         font-size: $text-font * 1.6;
         margin: 0 5% 0 0;
       }
+
       input {
         width: 50%;
         padding: 2% 5%;
       }
     }
   }
+
   .toggleInputs {
     display: flex;
     align-items: center;
     width: 60%;
     cursor: pointer;
+
     h5 {
       margin: 0 2% 0 0;
     }
+
     .filterCircle {
       width: 40px;
       height: 40px;
@@ -1958,15 +1972,29 @@ section.input_wrapper {
       justify-content: center;
       align-items: center;
       transition: all 250ms ease-in;
+
       &:hover {
         transform: rotate(-45deg);
       }
     }
   }
+
   .hiddenInputs {
     display: none;
+
     &.show {
-      display: block;
+      display: flex;
+      margin: 3% 0 0 0;
+    }
+
+    .column {
+      .inputWrapper {
+        margin: 0 0 1% 0;
+
+        input {
+          background: transparent;
+        }
+      }
     }
   }
 }
@@ -1976,11 +2004,13 @@ section.input_wrapper {
   &.hidden {
     display: none;
   }
+
   &.open {
     .accordion_inner {
       display: block;
     }
   }
+
   .accordion_inner {
     display: none;
   }

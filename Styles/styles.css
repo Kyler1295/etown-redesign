@@ -16,7 +16,8 @@ img {
 p,
 i,
 strong,
-b {
+b,
+input {
   font-family: tablet-gothic, sans-serif;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -657,20 +658,20 @@ div[class*=circle]::before {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: 5px;
-  left: 3px;
+  top: 4px;
+  left: 4px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 3px;
+  top: 0px;
   left: 5px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -2px;
-  left: 5px;
+  top: -3px;
+  left: 0px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 5px;
-  left: 1px;
+  top: -2px;
+  left: -3px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -1572,7 +1573,14 @@ section.input_wrapper .hiddenInputs {
   display: none;
 }
 section.input_wrapper .hiddenInputs.show {
-  display: block;
+  display: flex;
+  margin: 3% 0 0 0;
+}
+section.input_wrapper .hiddenInputs .column .inputWrapper {
+  margin: 0 0 1% 0;
+}
+section.input_wrapper .hiddenInputs .column .inputWrapper input {
+  background: transparent;
 }
 
 .accordion_wrapper.hidden {
