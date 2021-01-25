@@ -17,15 +17,22 @@
       width: 80vw;
       margin: 0 auto;
       display: flex;
+      height: 30vh;
     }
     
     .outputWrapper {
       width: 80vw;
-      margin: 5% auto;
+      margin: 5% 10%;
+      height: 40vh;
     }
 
     .inputHolder {
       width: 50%;
+    }
+
+    .options {
+      width: 80%;
+      margin: 0 auto;
     }
 
     input {
@@ -75,9 +82,10 @@
 
   </div>
 
-  <div class="outputWrapper">
-
-
+  <textarea class="outputWrapper"></textarea>
+  <div class="options">
+    <button id="copy">Copy Text</button>
+    <button id="clear">Clear Output</button>
   </div>
 
   <script>
@@ -90,6 +98,8 @@
     let description = _('description')
     let homepageLink = _('homepagelink')
     let button = _('generateJson')
+    let copy = _('copy')
+    let clear = _('clear')
     let output = document.querySelector('.outputWrapper')
 
     const parseSingleQuote = (stringType) => {
@@ -99,17 +109,26 @@
 
     button.addEventListener('click', () => {
       output.innerHTML = `
-      {<br>
-        "title": "${parseSingleQuote(title.value)}",<br>
-        "programtype": "${parseSingleQuote(programType.value)}",<br>
-        "programtypepretty": "${parseSingleQuote(programTypePretty.value)}",<br>
-        "areaofstudy": "${parseSingleQuote(areaOfStudy.value)}",<br>
-        "degreetype": "${parseSingleQuote(degreeType.value)}",<br>
-        "description": "${parseSingleQuote(description.value)}",<br>
-        "homepagelink": "${parseSingleQuote(homepageLink.value)}"<br>
+      {
+        "title": "${parseSingleQuote(title.value)}",
+        "programtype": "${parseSingleQuote(programType.value)}",
+        "programtypepretty": "${parseSingleQuote(programTypePretty.value)}",
+        "areaofstudy": "${parseSingleQuote(areaOfStudy.value)}",
+        "degreetype": "${parseSingleQuote(degreeType.value)}",
+        "description": "${parseSingleQuote(description.value)}",
+        "homepagelink": "${parseSingleQuote(homepageLink.value)}"
       },`
     })
 
+    copy.addEventListener('click', () => {
+      output.select()
+      output.setSelectionRange(0, 99999)
+      document.execCommand("copy")
+    })
+
+    clear.addEventListener('click', () => {
+      output.innerHTML = ''
+    })
 
   </script>
 </body>
