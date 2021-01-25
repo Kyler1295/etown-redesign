@@ -225,15 +225,31 @@ div[class*="buttons"] {
   margin: 5% 0;
 }
 
+div[class*="buttons"]:hover a i {
+  transition: 150ms all ease-in;
+  margin-left: 10px;
+}
+
 a[class*="light-blue"] {
   background-color: $light-blue;
   color: $black;
+}
+
+a[class*="light-blue"]:hover {
+  background-color: $red;
+  color: $white;
 }
 
 a[class*="red"] {
   background-color: $red;
   color: $white;
   border: 1px solid $white;
+}
+
+a[class*="red"]:hover {
+  background-color: $light-blue;
+  color: $black;
+  border: none;
 }
 
 a[class*="button"] {
