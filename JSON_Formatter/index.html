@@ -128,6 +128,8 @@
 
     clear.addEventListener('click', () => {
       output.innerHTML = ''
+      let allInputs = [...document.querySelectorAll('input')]
+      allInputs.forEach((input) => {input.value = ''})
     })
 
   </script>
