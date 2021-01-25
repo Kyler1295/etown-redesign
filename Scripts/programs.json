@@ -1,0 +1,20 @@
+[
+  {
+    "title": "biology",
+    "programtype": "undergraduatemajor undergraduateminor",
+    "programtypepretty": "Major, Minor",
+    "areaofstudy": "humanandhealthprofessions",
+    "degreetype": "B.S.",
+    "description": "Within the Biology major, you can choose from two concentrations to target you career goals. Biological Sciences or Health Professions. Or you can minor in Biology",
+    "homepagelink": "https://www.etown.edu/biology"
+  },
+  {
+    "title": "business",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "business",
+    "degreetype": "B.S.",
+    "description": "Lorem Ipsum Something",
+    "homepagelink": "https://www.etown.edu/business"
+  }
+]
