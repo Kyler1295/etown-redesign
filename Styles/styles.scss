@@ -1754,6 +1754,9 @@ header#main-header {
           outline: none;
           border: none;
           border-bottom: 1px solid $light-blue;
+          option {
+            color: $black;
+          }
         }
 
         .secondary-navigation__audiences {

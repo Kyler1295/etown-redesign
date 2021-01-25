@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Start Head Section -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="../Styles/styles.css">
   <script src="https://kit.fontawesome.com/054f84eb17.js" crossorigin="anonymous"></script>
 </head>
+<!-- End Head Section -->
 
+<!-- Start Body -->
 <body>
   <!-- Accessibility Options -->
   <div class="accessibility-skips"><a href="#main-content">Skip To Content</a></div>
@@ -57,7 +59,8 @@
           <li><a href="#">Alumni</a></li>
           <li><a href="#">Donors</a></li>
         </ul>
-        <select name="find-information" id="find-information">
+        <select name="find-information" id="find-information" onchange="document.location.href=this.value">
+          <option value="https://www.google.com">Current Students</option>
           <option value="https://www.google.com">Prospective Students</option>
           <option value="https://www.google.com">Admitted Students</option>
           <option value="https://www.google.com">Transfer Students</option>
