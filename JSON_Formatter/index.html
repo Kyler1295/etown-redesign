@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Formatter</title>
+</head>
+<body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .inputWrapper {
+      width: 80vw;
+      margin: 0 auto;
+      display: flex;
+    }
+    
+    .outputWrapper {
+      width: 80vw;
+      margin: 5% auto;
+    }
+
+    .inputHolder {
+      width: 50%;
+    }
+
+    input {
+      width: 90%;
+      margin: 15px 0 15px 0;
+      display: inline;
+    }
+
+    .guide {
+      width: 50%;
+      display: inline;
+    }
+  </style>
+  
+
+  <div class="inputWrapper">
+    <div class="inputHolder">
+      <input type="text" id="title" placeholder="Program Name: Biology"/><br />
+      <input type="text" id="programtype" placeholder="Program Types Keycode: undergraduatemajor"/><br />
+      <input type="text" id="programtypepretty" placeholder="Program Type Pretty: Major"/><br />
+      <input type="text" id="areaofstudy" placeholder="Area Of Study Keycode: humanandhealthprofessions"/><br />
+      <input type="text" id="degreetype" placeholder="Degree Type: B.S."/><br />
+      <input type="text" id="description" placeholder="Some Sort of Description"/><br />
+      <input type="text" id="homepagelink" placeholder="Homepage Link: https://www.etown.edu/biology"/><br />
+      <button id="generateJson">Submit</button>
+    </div>
+
+    <div class="guide">
+      <h2>Program Types</h2>
+      <p>Undergraduate Majors: undergraduatemajor</p>
+      <p>Undergraduate Minors: undergraduateminor</p>
+      <p>Undergraduate Concentrations: undergraduateconcentrations</p>
+      <p>Joint Degree Programs: jointdegreeprograms</p>
+      <p>Pre-Professional Programs: preprofessionalprograms</p>
+      <p>Graduate Programs: graduateprograms</p>
+      <p>SCPS: scps</p>
+      <br /><br /><br />
+      <h2>Areas Of Study</h2>
+      <p>Arts &amp; Humanities: artsandhumanities</p>
+      <p>Business: business</p>
+      <p>Continuing &amp; Professional Studies: scps</p>
+      <p>Engineering, Computer Science, Math: engineering</p>
+      <p>Human &amp; Health Professions: humanandhealthprofessions</p>
+      <p>Public Service: publicservice</p>
+      <p>Sciences: sciences</p>
+    </div>
+
+  </div>
+
+  <div class="outputWrapper">
+
+
+  </div>
+
+  <script>
+    const _ = (id) => {return document.getElementById(id)}
+    let title = _('title')
+    let programType = _('programtype')
+    let programTypePretty = _('programtypepretty')
+    let areaOfStudy = _('areaofstudy')
+    let degreeType = _('degreetype')
+    let description = _('description')
+    let homepageLink = _('homepagelink')
+    let button = _('generateJson')
+    let output = document.querySelector('.outputWrapper')
+
+    const parseSingleQuote = (stringType) => {
+      let newString = stringType.replace(/"/g, '\\"');
+      return newString
+    }
+
+    button.addEventListener('click', () => {
+      output.innerHTML = `
+      {<br>
+        "title": "${parseSingleQuote(title.value)}",<br>
+        "programtype": "${parseSingleQuote(programType.value)}",<br>
+        "programtypepretty": "${parseSingleQuote(programTypePretty.value)}",<br>
+        "areaofstudy": "${parseSingleQuote(areaOfStudy.value)}",<br>
+        "degreetype": "${parseSingleQuote(degreeType.value)}",<br>
+        "description": "${parseSingleQuote(description.value)}",<br>
+        "homepagelink": "${parseSingleQuote(homepageLink.value)}"<br>
+      },`
+    })
+
+
+  </script>
+</body>
+</html>
