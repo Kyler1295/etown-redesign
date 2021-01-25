@@ -983,11 +983,11 @@ div[class*="circle"] {
         color: $white;
         @include center-center();
         flex-direction: column;
-
         p {
           color: $white;
           width: 90%;
           margin: 0 auto;
+          font-size: $text-font * .7;
         }
 
         h4 {
@@ -1022,7 +1022,7 @@ div[class*="circle"] {
     position: absolute;
     color: $gray;
     top: 50%;
-
+    cursor: pointer;
     span {
       font-size: 4rem;
     }
@@ -1053,6 +1053,7 @@ div[class*="circle"] {
         &.hidden {
           display: flex;
         }
+        
       }
     }
   }
@@ -1073,6 +1074,7 @@ div[class*="circle"] {
         &.hidden {
           display: flex;
         }
+        
       }
     }
   }

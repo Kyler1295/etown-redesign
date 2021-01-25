@@ -658,20 +658,20 @@ div[class*=circle]::before {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: 4px;
-  left: 4px;
+  top: -3px;
+  left: 1px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 0px;
-  left: 5px;
+  top: -2px;
+  left: 4px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
   top: -3px;
-  left: 0px;
+  left: -2px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: -2px;
-  left: -3px;
+  top: 3px;
+  left: -1px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -801,6 +801,7 @@ div[class*=circle]::before {
   color: #FFFFFF;
   width: 90%;
   margin: 0 auto;
+  font-size: 0.7rem;
 }
 .social-block__container .social-block__wrapper .social-block .social-block__content h4 {
   margin: 15px 0;
@@ -827,6 +828,7 @@ div[class*=circle]::before {
   position: absolute;
   color: #C8C8C8;
   top: 50%;
+  cursor: pointer;
 }
 .social-block__container .social-prev-arrow span,
 .social-block__container .social-next-arrow span {
