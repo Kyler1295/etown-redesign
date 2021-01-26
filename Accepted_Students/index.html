@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start Head Section -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/uos4oem.css">
+  <link rel="stylesheet" href="../Styles/styles.css">
+  <script src="https://kit.fontawesome.com/054f84eb17.js" crossorigin="anonymous"></script>
+</head>
+<!-- End Head Section -->
+
+<!-- Start Body -->
+
+<body>
+  <!-- Accessibility Options -->
+  <div class="accessibility-skips"><a href="#main-content">Skip To Content</a></div>
+  <div class="accessibility-skips"><a href="#main-header">Skip To Navigation</a></div>
+  <div class="accessibility-skips"><a href="#main-footer">Skip To Footer</a></div>
+
+  <!-- Header Open -->
+  <header id="main-header">
+    <!-- Main navigation row -->
+    <nav class="main-navigation">
+      <!-- Logo -->
+      <a href="#" class="main-navigation__home">
+        <img src="../images/ETOWN_Footer_Logo.png" alt="Etown" class="logo">
+      </a>
+      <!-- Main Navigation Links -->
+      <ul class="main-navigation__links">
+        <li><a href="https://www.etown.edu/current-students/index.aspx">Current Students</a></li>
+        <li><a href="https://www.etown.edu/current-students/index.aspx">Contact</a></li>
+        <li><a href="https://www.etown.edu/admissions/visit/index.aspx">Visit</a></li>
+        <li><a href="https://www.etown.edu/admissions/apply/index.aspx">Apply</a></li>
+        <!-- Hamburger -->
+        <div tabindex="0" class="hamburger">
+          <p class="menu open">Menu<i class="fas fa-bars"></i></p>
+          <p class="close-menu close">Close<i class="fas fa-times"></i></p>
+        </div>
+      </ul>
+    </nav>
+    <!-- Hidden Secondary Navigation -->
+    <div class="secondary-navigation">
+      <!-- Left Side Navigation [Information] -->
+      <section class="secondary-navigation__information">
+        <h5>Find Information for:</h5>
+        <ul class="secondary-navigation__audiences">
+          <li><a href="https://www.etown.edu/admissions/index.aspx">Prospective Students</a></li>
+          <li><a href="https://www.etown.edu/admissions/accepted.aspx">Admitted Students</a></li>
+          <li><a href="https://www.etown.edu/admissions/apply/transfer-apply.aspx">Transfer Students</a></li>
+          <li><a href="https://www.etown.edu/scps/admissions/graduate.aspx">Graduate Students</a></li>
+          <li><a href="https://www.etown.edu/scps">Adult Learners</a></li>
+          <li><a href="https://www.etown.edu/offices/international-students/index.aspx">International Students</a></li>
+          <li><a href="https://www.etown.edu/offices/registration-records/veterans.aspx">Military Students</a></li>
+          <li><a href="https://www.etown.edu/parents/index.aspx">Parents</a></li>
+          <li><a href="https://www.etown.edu/faculty-staff/index.aspx">Faculty &amp; Staff</a></li>
+          <li><a href="https://www.etownalumni.com/s/154/bp/home.aspx">Alumni</a></li>
+          <li><a href="https://www.etown.edu/offices/development/">Donors</a></li>
+        </ul>
+        <select name="find-information" id="find-information" onchange="document.location.href=this.value">
+          <option value="https://www.etown.edu/current-students/index.aspx">Current Students</option>
+          <option value="https://www.etown.edu/admissions/index.aspx">Prospective Students</option>
+          <option value="https://www.etown.edu/admissions/accepted.aspx">Admitted Students</option>
+          <option value="https://www.etown.edu/admissions/apply/transfer-apply.aspx">Transfer Students</option>
+          <option value="https://www.etown.edu/scps/admissions/graduate.aspx">Graduate Students</option>
+          <option value="https://www.etown.edu/scps">Adult Learners</option>
+          <option value="https://www.etown.edu/offices/international-students/index.aspx">International Students
+          </option>
+          <option value="https://www.etown.edu/offices/registration-records/veterans.aspx">Military Students</option>
+          <option value="https://www.etown.edu/parents/index.aspx">Parents</option>
+          <option value="https://www.etown.edu/faculty-staff/index.aspx">Faculty &amp; Staff</option>
+          <option value="https://www.etownalumni.com/s/154/bp/home.aspx">Alumni</option>
+          <option value="https://www.etown.edu/offices/development/">Donors</option>
+        </select>
+        <label for="site-search"></label>
+        <input type="text" placeholder="Search" />
+      </section>
+      <!-- Right Side Navigation [Additional Links] -->
+      <section class="secondary-navigation__links">
+        <!-- Meet Etown -->
+        <nav tabindex="0" class="secondary-navigation__sub-navs">
+          <div class="sub-navs__header">
+            <h6 class="sub-navs__title">Meet Etown<i class="fas fa-arrow-right"></i></h6>
+            <div class="sub-navs__toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="sub-navs__links">
+            <ul>
+              <li><a href="#">Educate for Service</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Office of the President</a></li>
+              <li><a href="#">Fast Facts</a></li>
+              <li><a href="#">Traditions</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Media Resources</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Admissions and Aid -->
+        <nav tabindex="0" class="secondary-navigation__sub-navs">
+          <div class="sub-navs__header">
+            <h6 class="sub-navs__title">Admissions &amp; Aid<i class="fas fa-arrow-right"></i></h6>
+            <div class="sub-navs__toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="sub-navs__links">
+            <ul>
+              <li><a href="#">Apply to Etown</a></li>
+              <li><a href="#">Visit Options</a></li>
+              <li><a href="#">Request Information</a></li>
+              <li><a href="#">Transfer to Etown</a></li>
+              <li><a href="#">Important Dates &amp; Deadlines</a></li>
+              <li><a href="#">Tuition &amp; Fees</a></li>
+              <li><a href="#">Financial Aid &amp; Scholarships</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Academics -->
+        <nav tabindex="0" class="secondary-navigation__sub-navs">
+          <div class="sub-navs__header">
+            <h6 class="sub-navs__title">Academics<i class="fas fa-arrow-right"></i></h6>
+            <div class="sub-navs__toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="sub-navs__links">
+            <ul>
+              <li><a href="#">Majors &amp; Minors</a></li>
+              <li><a href="#">Beyond the Classroom</a></li>
+              <li><a href="#">For Current Students</a></li>
+              <li><a href="#">School of Continuing &amp; Professional Studies</a></li>
+              <li><a href="#">Graduate Programs</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Life At Etown -->
+        <nav tabindex="0" class="secondary-navigation__sub-navs">
+          <div class="sub-navs__header">
+            <h6 class="sub-navs__title">Life at Etown<i class="fas fa-arrow-right"></i>
+            </h6>
+            <div class="sub-navs__toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="sub-navs__links">
+            <ul>
+              <li><a href="#">Athletics</a></li>
+              <li><a href="#">First-year Jays</a></li>
+              <li><a href="#">Campus Life</a></li>
+              <li><a href="#">Dining</a></li>
+              <li><a href="#">Residence Life</a></li>
+              <li><a href="#">Wellness &amp; Safety</a></li>
+              <li><a href="#">Diversity, Equity, &amp; Inclusivity</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Additional Resources -->
+        <div class="secondary-navigation__resources">
+          <h6>Additional Resources</h6>
+          <ul>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">Blue Jay Athletics</a>
+            </li>
+            <li>
+              <a href="#">College Store</a>
+            </li>
+            <li>
+              <a href="#">Campus Map &amp; Directory</a>
+            </li>
+            <li>
+              <a href="#">The High Library</a>
+            </li>
+            <li>
+              <a href="#">Bowers Center</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero-section" style="background-image: url('/images/deposit-hero.jpg')">
+      <div class="hero-section__content">
+        <h1>Join the <br /><span>Class of 2025!</span></h1>
+        <h6><span class="uppercase">hey there, future blue jay!</span> Congratulations to you on your acceptance to
+          Etown (and congrats to us for enriching our community with someone as awesome as you!). Next step? To
+          officially hold your spot in the Class of 2025, <span class="red">submit your enrollment deposit by June 1.</span></h6>
+      </div>
+    </section>
+    <section class="gray-background">
+      
+    </section>
+
+  </main>
+
+  <footer id="main-footer">
+    <div class="logo-contact">
+      <img src="../images/ETOWN_Footer_Logo.png" alt="Etown Wordmark">
+      <div class="connect">
+        <div class="contact">
+          <p>717-361-1000</p>
+          <p>One Alpha Drive</p>
+          <p>Elizabethtown, PA 17022-2298</p>
+        </div>
+        <div class="social">
+          <p>Contact Etown</p>
+          <div class="icons">
+            <a href="#"><img src="./images/footer-instagram.png" alt="Instagram" class="social_icon" /></a>
+            <a href="#"><img src="./images/footer-twitter.png" alt="Twitter" class="social_icon" /></a>
+            <a href="#"><img src="./images/footer-facebook.png" alt="Facebook" class="social_icon" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resources">
+      <h6>Additional Resources</h6>
+      <div class="resource-links">
+        <ul>
+          <li><a href="#">Current Students</a></li>
+          <li><a href="#">Visit</a></li>
+          <li><a href="#">Apply</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Blue Jay Athletics</a></li>
+          <li><a href="#">College Store</a></li>
+          <li><a href="#">The High Library</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Campus Map &amp; Directory</a></li>
+          <li><a href="#">Public Safety</a></li>
+        </ul>
+      </div>
+      <select name="additional-resources" id="additional-resources" onchange="document.location.href=this.value">
+        <option value="#">Current Students</option>
+        <option value="#">Visit</option>
+        <option value="#">Apply</option>
+        <option value="#">Blue Jay Athletics</option>
+        <option value="#">College Store</option>
+        <option value="#">The High Library</option>
+        <option value="#">News</option>
+        <option value="#">Campus Map &amp; Directory</option>
+        <option value="#">Public Safety</option>
+      </select>
+    </div>
+    <div class="disclaimer">
+      <p class="copyright">&copy; 2020 Elizabethtown College</p>
+      <ul>
+        <li><a href="#">College Disclaimer</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Diversity, Equity, &amp; Inclusivity</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/054f84eb17.js" crossorigin="anonymous"></script>
+  <script src="../Scripts/landingPage.js"></script>
+  <script src="/Scripts/scripts.js"></script>
+</body>
+
+</html>

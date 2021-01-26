@@ -695,20 +695,20 @@ div[class*=circle]::before {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: -2px;
+  top: 5px;
   left: 0px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 0px;
-  left: 0px;
+  top: 2px;
+  left: 4px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -2px;
-  left: 3px;
+  top: 2px;
+  left: 2px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
   top: 5px;
-  left: -3px;
+  left: 3px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -1795,6 +1795,28 @@ section.input_wrapper .hiddenInputs .column .inputWrapper {
   .accordions_wrapper article.accordion_wrapper.open .accordion_inner aside.accordion_meta div {
     width: 50%;
   }
+}
+.hero-section {
+  width: 100vw;
+  height: 80vh;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+  background-position: center;
+}
+.hero-section .hero-section__content {
+  padding: 15% 0 0 0;
+}
+.hero-section .hero-section__content h1 {
+  font-weight: bold;
+}
+.hero-section .hero-section__content h1 span {
+  font-size: 8.4rem;
+}
+.hero-section .hero-section__content h6 .red {
+  background-color: #E1261C;
 }
 
 /*# sourceMappingURL=styles.css.map */
