@@ -376,6 +376,11 @@ div[class*="circle"] {
   color: $white;
 }
 
+.gray-background {
+  background: $gray;
+  color: $black;
+}
+
 .gradient-background {
   background: rgb(0, 75, 152);
   background: radial-gradient(circle, rgba(0, 75, 152, 1) 0%, rgba(10, 34, 64, 1) 100%);
@@ -401,6 +406,61 @@ div[class*="circle"] {
     background-image: url('../images/homepage-news-lineart.png');
     background-size: contain;
   }
+}
+
+// Flex Classes
+.center-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.start-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.start-end {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.around-start {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.around-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.around-end {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 // Specific Styles
