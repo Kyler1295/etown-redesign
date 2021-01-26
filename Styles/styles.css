@@ -695,20 +695,20 @@ div[class*=circle]::before {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: 5px;
-  left: 0px;
-}
-.outcomes__wrapper .outcomes__item .circle-two::before {
   top: 2px;
   left: 4px;
 }
-.outcomes__wrapper .outcomes__item .circle-three::before {
-  top: 2px;
+.outcomes__wrapper .outcomes__item .circle-two::before {
+  top: 4px;
   left: 2px;
 }
+.outcomes__wrapper .outcomes__item .circle-three::before {
+  top: 0px;
+  left: 5px;
+}
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 5px;
-  left: 3px;
+  top: 4px;
+  left: 0px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -1588,6 +1588,7 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
 }
 .majors-intro h1 {
   font-weight: bold;
+  font-size: 2.24rem;
 }
 .majors-intro h6 {
   color: #004B98;
@@ -1805,6 +1806,8 @@ section.input_wrapper .hiddenInputs .column .inputWrapper {
   align-items: center;
   padding: 0 15%;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero-section .hero-section__content {
   padding: 15% 0 0 0;

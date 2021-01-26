@@ -1984,6 +1984,7 @@ header#main-header {
 
   h1 {
     font-weight: bold;
+    font-size: $header-font * .8;
   }
 
   h6 {
@@ -2240,6 +2241,8 @@ section.input_wrapper {
   align-items: center;
   padding: 0 15%;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   .hero-section__content {
     padding: 15% 0 0 0;
     h1 {
