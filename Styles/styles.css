@@ -695,20 +695,20 @@ div[class*=circle]::before {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: 2px;
-  left: 4px;
+  top: 3px;
+  left: -1px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 4px;
-  left: 2px;
+  top: 2px;
+  left: 5px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
   top: 0px;
-  left: 5px;
+  left: -3px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 4px;
-  left: 0px;
+  top: -2px;
+  left: -1px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -1588,7 +1588,7 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
 }
 .majors-intro h1 {
   font-weight: bold;
-  font-size: 2.24rem;
+  font-size: 2.8rem;
 }
 .majors-intro h6 {
   color: #004B98;
