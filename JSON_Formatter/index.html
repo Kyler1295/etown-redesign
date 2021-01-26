@@ -17,12 +17,12 @@
       width: 80vw;
       margin: 0 auto;
       display: flex;
-      height: 30vh;
+      height: 50vh;
     }
     
     .outputWrapper {
       width: 80vw;
-      margin: 5% 10%;
+      margin: 1% 10%;
       height: 40vh;
     }
 
@@ -57,7 +57,11 @@
       <input type="text" id="degreetype" placeholder="Degree Type: B.S."/><br />
       <input type="text" id="description" placeholder="Some Sort of Description"/><br />
       <input type="text" id="homepagelink" placeholder="Homepage Link: https://www.etown.edu/biology"/><br />
-      <button id="generateJson">Submit</button>
+      <div class="options">
+        <button id="generateJson">Submit</button>
+        <button id="copy">Copy Text</button>
+        <button id="clear">Clear Output</button>
+      </div>
     </div>
 
     <div class="guide">
@@ -83,10 +87,7 @@
   </div>
 
   <textarea class="outputWrapper"></textarea>
-  <div class="options">
-    <button id="copy">Copy Text</button>
-    <button id="clear">Clear Output</button>
-  </div>
+  
 
   <script>
     const _ = (id) => {return document.getElementById(id)}
