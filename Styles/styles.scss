@@ -179,7 +179,6 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 0 0 3px;
-  height: 100%;
 }
 
 // Form Stylings
@@ -280,25 +279,25 @@ div[class*="buttons"]:hover a i {
   margin-left: 10px;
 }
 
-a[class*="light-blue"] {
+a[class*="light-blue__button"] {
   background-color: $light-blue;
   color: $black;
 }
 
-a[class*="light-blue"]:hover {
+a[class*="light-blue__button"]:hover {
   background-color: $red;
   color: $white;
 }
 
-a[class*="red"] {
+a[class*="red__button"] {
   background-color: $red;
   color: $white;
   border: 1px solid $white;
 }
 
-a[class*="red"]:hover {
-  background-color: $light-blue;
-  color: $black;
+a[class*="red__button"]:hover {
+  background-color: $white;
+  color: $red;
   border: none;
 }
 
@@ -2396,4 +2395,46 @@ section.input_wrapper {
   border-top: 2px solid $light-blue;
   border-bottom: 2px solid $light-blue;
   padding: 15px;
+}
+
+// Overlayed Image
+.overlayed-image {
+  height: 25vw;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+  }
+  &.blueOverlay {
+    &::before {
+      background-color: $primary-blue;
+    }
+  }
+  &.darkOverlay {
+    &::before {
+      background-color: $dark-blue;
+    }
+  }
+  &.grayOverlay {
+    &::before {
+      background-color: $gray;
+    }
+  }
+  &.redOverlay {
+    &::before {
+      background-color: $red;
+    }
+  }
+  &.lightOverlay {
+    &::before {
+      background-color: $light-blue;
+    }
+  }
 }
