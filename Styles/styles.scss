@@ -118,12 +118,36 @@ a {
   text-transform: uppercase;
 }
 
-.textCenter {
+.text-center {
   text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .italic {
   text-emphasis: oblique;
+}
+
+.m15 {
+  margin: 15px;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w25 {
+  width: 25%;
 }
 
 .white-text {
@@ -317,7 +341,7 @@ a[class*="button"] {
 }
 
 // Circles
-div[class*="circle"] {
+.outcomes__circle {
   width: 150px;
   height: 150px;
   border-radius: 100%;
@@ -338,21 +362,13 @@ div[class*="circle"] {
   }
 }
 
-.blue-circle {
-  background: $primary-blue;
-  color: $white;
-}
 
-.red-circle {
-  background: $red;
-  color: $white;
-}
 
 
 
 // width setter
 [class*="-background"] {
-  padding: 15% 10%;
+  padding: 5% 10%;
 }
 
 // Colored Backgrounds
@@ -409,6 +425,10 @@ div[class*="circle"] {
 }
 
 // Flex Classes
+.flex-column {
+  flex-direction: column;
+}
+
 .center-start {
   display: flex;
   justify-content: center;
@@ -2294,7 +2314,7 @@ section.input_wrapper {
 // Hero CSS
 .hero-section {
   width: 100vw;
-  height: 80vh;
+  min-height: 80vh;
   color: $white;
   display: flex;
   justify-content: center;
@@ -2317,4 +2337,63 @@ section.input_wrapper {
       }
     }
   }
+}
+
+// Circles
+.etown-circle__large {
+  position: relative;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 250px;
+    height: 250px;
+    border: 2px solid $light-blue;
+    border-radius: 100%;
+  }
+  i.fas {
+    font-size: 4rem;
+    height: auto;
+    margin: 0 0 15px 0;
+  }
+}
+
+.dark-circle {
+  background: $dark-blue;
+  color: $white;
+}
+
+.blue-circle {
+  background: $primary-blue;
+  color: $white;
+}
+
+.red-circle {
+  background: $red;
+  color: $white;
+}
+
+.lightBlue-circle {
+  background: $light-blue;
+  color: $black;
+}
+
+.gray-circle {
+  background: $gray;
+  color: $black;
+}
+
+// Fancy OR
+.fancy-or {
+  border-top: 2px solid $light-blue;
+  border-bottom: 2px solid $light-blue;
+  padding: 15px;
 }
