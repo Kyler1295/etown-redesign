@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content=""/>
+  <meta name="mobile-web-app-capable" content="yes">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/uos4oem.css">
@@ -29,10 +31,10 @@
       </a>
       <!-- Main Navigation Links -->
       <ul class="main-navigation__links">
-        <li><a href="#">Current Students</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Visit</a></li>
-        <li><a href="#">Apply</a></li>
+        <li><a href="https://www.etown.edu/current-students/index.aspx">Current Students</a></li>
+        <li><a href="https://www.etown.edu/current-students/index.aspx">Contact</a></li>
+        <li><a href="https://www.etown.edu/admissions/visit/index.aspx">Visit</a></li>
+        <li><a href="https://www.etown.edu/admissions/apply/index.aspx">Apply</a></li>
         <!-- Hamburger -->
         <div tabindex="0" class="hamburger">
           <p class="menu open">Menu<i class="fas fa-bars"></i></p>
@@ -46,31 +48,31 @@
       <section class="secondary-navigation__information">
         <h5>Find Information for:</h5>
         <ul class="secondary-navigation__audiences">
-          <li><a href="#">Prospective Students</a></li>
-          <li><a href="#">Admitted Students</a></li>
-          <li><a href="#">Transfer Students</a></li>
-          <li><a href="#">Graduate Students</a></li>
-          <li><a href="#">Adult Learners</a></li>
-          <li><a href="#">International Students</a></li>
-          <li><a href="#">Military Students</a></li>
-          <li><a href="#">Parents</a></li>
-          <li><a href="#">Faculty &amp; Staff</a></li>
-          <li><a href="#">Alumni</a></li>
-          <li><a href="#">Donors</a></li>
+          <li><a href="https://www.etown.edu/admissions/index.aspx">Prospective Students</a></li>
+          <li><a href="https://www.etown.edu/admissions/accepted.aspx">Admitted Students</a></li>
+          <li><a href="https://www.etown.edu/admissions/apply/transfer-apply.aspx">Transfer Students</a></li>
+          <li><a href="https://www.etown.edu/scps/admissions/graduate.aspx">Graduate Students</a></li>
+          <li><a href="https://www.etown.edu/scps">Adult Learners</a></li>
+          <li><a href="https://www.etown.edu/offices/international-students/index.aspx">International Students</a></li>
+          <li><a href="https://www.etown.edu/offices/registration-records/veterans.aspx">Military Students</a></li>
+          <li><a href="https://www.etown.edu/parents/index.aspx">Parents</a></li>
+          <li><a href="https://www.etown.edu/faculty-staff/index.aspx">Faculty &amp; Staff</a></li>
+          <li><a href="https://www.etownalumni.com/s/154/bp/home.aspx">Alumni</a></li>
+          <li><a href="https://www.etown.edu/offices/development/">Donors</a></li>
         </ul>
         <select name="find-information" id="find-information" onchange="document.location.href=this.value">
-          <option value="https://www.google.com">Current Students</option>
-          <option value="https://www.google.com">Prospective Students</option>
-          <option value="https://www.google.com">Admitted Students</option>
-          <option value="https://www.google.com">Transfer Students</option>
-          <option value="https://www.google.com">Graduate Students</option>
-          <option value="https://www.google.com">Adult Learners</option>
-          <option value="https://www.google.com">International Students</option>
-          <option value="https://www.google.com">Military Students</option>
-          <option value="https://www.google.com">Parents</option>
-          <option value="https://www.google.com">Faculty &amp; Staff</option>
-          <option value="https://www.google.com">Alumni</option>
-          <option value="https://www.google.com">Donors</option>
+          <option value="https://www.etown.edu/current-students/index.aspx">Current Students</option>
+          <option value="https://www.etown.edu/admissions/index.aspx">Prospective Students</option>
+          <option value="https://www.etown.edu/admissions/accepted.aspx">Admitted Students</option>
+          <option value="https://www.etown.edu/admissions/apply/transfer-apply.aspx">Transfer Students</option>
+          <option value="https://www.etown.edu/scps/admissions/graduate.aspx">Graduate Students</option>
+          <option value="https://www.etown.edu/scps">Adult Learners</option>
+          <option value="https://www.etown.edu/offices/international-students/index.aspx">International Students</option>
+          <option value="https://www.etown.edu/offices/registration-records/veterans.aspx">Military Students</option>
+          <option value="https://www.etown.edu/parents/index.aspx">Parents</option>
+          <option value="https://www.etown.edu/faculty-staff/index.aspx">Faculty &amp; Staff</option>
+          <option value="https://www.etownalumni.com/s/154/bp/home.aspx">Alumni</option>
+          <option value="https://www.etown.edu/offices/development/">Donors</option>
         </select>
         <label for="site-search"></label>
         <input type="text" placeholder="Search" />
@@ -731,9 +733,9 @@
         <div class="social">
           <p>Contact Etown</p>
           <div class="icons">
-            <p>Icon</p>
-            <p>Icon</p>
-            <p>Icon</p>
+            <a href="#"><img src="./images/footer-instagram.png" alt="Instagram" class="social_icon" /></a>
+            <a href="#"><img src="./images/footer-twitter.png" alt="Twitter" class="social_icon" /></a>
+            <a href="#"><img src="./images/footer-facebook.png" alt="Facebook" class="social_icon" /></a>
           </div>
         </div>
       </div>
@@ -757,14 +759,25 @@
           <li><a href="#">Public Safety</a></li>
         </ul>
       </div>
+      <select name="additional-resources" id="additional-resources" onchange="document.location.href=this.value">
+        <option value="#">Current Students</option>
+        <option value="#">Visit</option>
+        <option value="#">Apply</option>
+        <option value="#">Blue Jay Athletics</option>
+        <option value="#">College Store</option>
+        <option value="#">The High Library</option>
+        <option value="#">News</option>
+        <option value="#">Campus Map &amp; Directory</option>
+        <option value="#">Public Safety</option>
+      </select>
     </div>
     <div class="disclaimer">
-      <p>2020 Elizabethtown College</p>
+      <p class="copyright">&copy; 2020 Elizabethtown College</p>
       <ul>
-        <li>College Disclaimer</li>
-        <li>Terms of Use</li>
-        <li>Accessibility</li>
-        <li>Diversity, Equity, &amp; Inclusivity</li>
+        <li><a href="#">College Disclaimer</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Diversity, Equity, &amp; Inclusivity</a></li>
       </ul>
     </div>
   </footer>

@@ -6,6 +6,9 @@ const nextArrow = document.querySelector('.next-arrow')
 
 let currentOutcome = 0;
 
+// Copyright Code
+document.querySelector('.copyright').innerHTML = `&copy; ${new Date().getFullYear()} Elizabethtown College`
+
 // Changes the Outcomes
 const switchOutcomes = (change) => {
   // For Removing Classes

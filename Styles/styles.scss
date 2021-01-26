@@ -300,7 +300,7 @@ a[class*="button"] {
 
 @media screen and (min-width: 768px) {
   a[class*="button"] {
-    padding: 3% 6%;
+    padding: 15px 30px;
     font-size: $text-font * 1.4;
   }
 
@@ -311,7 +311,7 @@ a[class*="button"] {
 
 @media screen and (min-width: 1200px) {
   a[class*="button"] {
-    padding: 1.5% 3%;
+    padding: 15px 30px;
     font-size: $text-font * 1.2;
   }
 }
@@ -450,7 +450,7 @@ div[class*="circle"] {
 
 @media screen and (min-width: 768px) {
   .hero-video__wrapper {
-    height: 40vh;
+    height: 70vh;
   }
 }
 
@@ -572,6 +572,7 @@ div[class*="circle"] {
           width: auto;
           font-size: $header-font * 1.2;
           margin: 10px 0 0 0;
+          white-space: nowrap;
         }
 
         select {
@@ -1265,15 +1266,19 @@ footer#main-footer {
 
     .contact {
       margin: 7% 0 0 0;
+    }
+    .social {
+      margin: 7% 0 0 0;
 
-      .social {
-        margin: 7% 0 0 0;
-
-        .icons {
-          display: flex;
-
-          p {
-            margin: 0 5px 0 0;
+      .icons {
+        display: flex;
+        margin: 25px 0 0 0;
+        a {
+          width: 6%;
+          @include center-center();
+          margin: 0 20px 0 0;
+          .social_icon {
+            width: 100%;
           }
         }
       }
@@ -1296,6 +1301,11 @@ footer#main-footer {
       display: none;
       z-index: 2;
       position: relative;
+    }
+
+    #additional-resources {
+      width: 60%;
+      padding: 3% 0;
     }
   }
 
@@ -1336,9 +1346,11 @@ footer#main-footer {
 
     .resources {
       h6 {
-        margin: 2% 0 5%;
+        margin: 0;
       }
-
+      #additional-resources {
+        display: none;
+      }
       .resource-links {
         display: flex;
         width: 100%;

@@ -6,7 +6,7 @@ async function fetchPrograms() {
   programs.forEach((program) => {
     appendedList += 
   `
-  <article class="accordion_wrapper" data-title="${program.title}" data-program="${program.programtype}" data-study="${program.areaofstudy}">
+  <article class="accordion_wrapper" data-title="${program.title}" data-program="${program.programtype}" data-study="${program.areaofstudy}" tabindex="0">
     <header class="accordion_outer">
       <h2 class="accordion_title">${program.title}<i class="fas fa-arrow-right hover-arrow"></i></h2>
       <p class="accordion_program capitalize">${program.programtypepretty}</p>
@@ -131,7 +131,12 @@ fetchPrograms().then(() => {
 
   // Main Control for Accordion Toggle
   const toggleAccordions = (accordion) => {
-    accordion.classList.toggle('open')
+    if (accordion.classList.contains('open')) {
+      accordion.classList.toggle('open')
+    } else {
+      accordions.forEach((accordion) => {accordion.classList.remove('open')})
+      accordion.classList.toggle('open')
+    }
   }
 
   // Handles the event listener on button submit.
@@ -143,6 +148,14 @@ fetchPrograms().then(() => {
   // Handles toggling accordions
   accordions.forEach((accordion) => {
     accordion.addEventListener('click', () => toggleAccordions(accordion))
+  })
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener('keydown', (e) => {
+      if (e.keyCode === 13) {
+        toggleAccordions(accordion)
+      }
+    })
   })
 
   toggleInput.addEventListener('click', () => hiddenInput.classList.toggle('show'))
