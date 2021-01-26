@@ -695,20 +695,20 @@ div[class*=circle]::before {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
+  top: -1px;
+  left: 0px;
+}
+.outcomes__wrapper .outcomes__item .circle-two::before {
+  top: 4px;
+  left: 3px;
+}
+.outcomes__wrapper .outcomes__item .circle-three::before {
   top: 3px;
   left: -1px;
 }
-.outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 2px;
-  left: 5px;
-}
-.outcomes__wrapper .outcomes__item .circle-three::before {
-  top: 0px;
-  left: -3px;
-}
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: -2px;
-  left: -1px;
+  top: -4px;
+  left: -4px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -1600,7 +1600,7 @@ header#main-header .secondary-navigation .secondary-navigation__links .secondary
 }
 
 section.input_wrapper {
-  padding: 2.5% 5vw;
+  padding: 2% 5vw;
 }
 section.input_wrapper .shownInputs {
   padding: 0 5vw;
