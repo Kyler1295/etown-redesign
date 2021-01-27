@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 100vw;
 }
 
 // Global Variables
@@ -150,6 +151,11 @@ a {
   width: 25%;
 }
 
+.z5 {
+  z-index: 5;
+  position: relative;
+}
+
 .white-text {
   color: $white !important;
 }
@@ -241,7 +247,7 @@ input[type="radio"]:checked {
   strong,
   b {
     font-size: $text-font * 1.2;
-    line-height: 32px;
+    line-height: 26px;
   }
 
   h1 {
@@ -2318,7 +2324,7 @@ section.input_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 15%;
+  padding: 5% 15%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2416,6 +2422,7 @@ section.input_wrapper {
   background-size: cover;
   background-position: center;
   position: relative;
+  @include center-center();
   &::before {
     content: '';
     position: absolute;
@@ -2452,8 +2459,38 @@ section.input_wrapper {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .overlayed-image {
     height: 100vw;
+  }
+}
+
+// Callout Text
+.lg-text {
+  font-size: $header-font * 1.2;
+  margin: 25px 0;
+  font-family: clarendon-text-pro, serif;
+}
+
+.md-text {
+  font-size: $header-font *.4;
+  margin: 3px 0;
+}
+
+.sm-text {
+  font-size: $header-font * .3;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .lg-text {
+    font-size: $header-font;
+  }
+  .md-text {
+    font-size: $header-font *.3;
+  }
+  .sm-text {
+    font-size: $header-font * .1;
   }
 }
