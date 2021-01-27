@@ -55,6 +55,15 @@ img {
   object-fit: contain;
 }
 
+// Bulma Overrides
+.columns {
+  margin: 0;
+}
+
+.columns:not(:last-child) {
+  margin: 0;
+}
+
 
 // Text
 p,
