@@ -771,19 +771,19 @@ a[class*=button] {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
-  top: -4px;
-  left: 5px;
+  top: -2px;
+  left: -3px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 2px;
-  left: 1px;
+  top: -2px;
+  left: 2px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -2px;
-  left: -2px;
+  top: 3px;
+  left: -4px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 1px;
+  top: 3px;
   left: -2px;
 }
 .outcomes__wrapper .outcomes__buttons {
@@ -1987,7 +1987,7 @@ section.input_wrapper .hiddenInputs .column .inputWrapper {
   background-color: #3DB5E6;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .overlayed-image {
     height: 100vw;
   }

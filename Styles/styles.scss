@@ -2439,7 +2439,7 @@ section.input_wrapper {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .overlayed-image {
     height: 100vw;
   }
