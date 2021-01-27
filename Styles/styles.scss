@@ -1670,7 +1670,7 @@ header#main-header {
         border-bottom: 1px solid $gray;
         padding: 3% 0;
         color: $primary-blue;
-
+        cursor: pointer;
         .sub-navs__header {
           display: flex;
           justify-content: space-between;
