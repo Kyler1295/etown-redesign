@@ -2333,6 +2333,19 @@ section.input_wrapper {
     h6 {
       .red {
         background-color: $red;
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    .hero-section__content {
+      h1 {
+        span {
+          font-size: $header-font;
+        }
       }
     }
   }
