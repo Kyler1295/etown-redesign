@@ -771,20 +771,20 @@ a[class*=button] {
   font-size: 1.25rem;
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
+  top: -4px;
+  left: 5px;
+}
+.outcomes__wrapper .outcomes__item .circle-two::before {
+  top: 2px;
+  left: 1px;
+}
+.outcomes__wrapper .outcomes__item .circle-three::before {
   top: -2px;
   left: -2px;
 }
-.outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 1px;
-  left: 4px;
-}
-.outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -3px;
-  left: -3px;
-}
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: -4px;
-  left: 3px;
+  top: 1px;
+  left: -2px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
@@ -1985,6 +1985,12 @@ section.input_wrapper .hiddenInputs .column .inputWrapper {
 }
 .overlayed-image.lightOverlay::before {
   background-color: #3DB5E6;
+}
+
+@media screen and (min-width: 768px) {
+  .overlayed-image {
+    height: 100vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
