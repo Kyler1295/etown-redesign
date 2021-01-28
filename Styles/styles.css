@@ -29,7 +29,7 @@ b,
 input {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 24px;
   font-weight: 200;
 }
@@ -786,19 +786,19 @@ a[class*=button] {
 }
 .outcomes__wrapper .outcomes__item .circle-one::before {
   top: -1px;
-  left: 4px;
+  left: -3px;
 }
 .outcomes__wrapper .outcomes__item .circle-two::before {
-  top: 4px;
+  top: -2px;
   left: 3px;
 }
 .outcomes__wrapper .outcomes__item .circle-three::before {
-  top: -3px;
-  left: 0px;
+  top: -2px;
+  left: 3px;
 }
 .outcomes__wrapper .outcomes__item .circle-four::before {
-  top: 5px;
-  left: 1px;
+  top: 4px;
+  left: 0px;
 }
 .outcomes__wrapper .outcomes__buttons {
   z-index: 3;
