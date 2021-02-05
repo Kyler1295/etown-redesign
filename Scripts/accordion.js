@@ -125,7 +125,7 @@ fetchPrograms().then(() => {
   const updateAccordions = () => {
     let currentValue = searchInput.value
     accordions.forEach((accordion) => {
-      accordion.getAttribute('data-title').includes(currentValue) ? accordion.classList.remove('hidden') : accordion.classList.add('hidden')
+      accordion.getAttribute('data-title').toLowerCase().includes(currentValue.toLowerCase()) ? accordion.classList.remove('hidden') : accordion.classList.add('hidden')
     })
   }
 

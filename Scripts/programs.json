@@ -1,20 +1,671 @@
 [
   {
-    "title": "biology",
-    "programtype": "undergraduatemajor undergraduateminor",
-    "programtypepretty": "Major, Minor",
+    "title": "Accounting ",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "Business",
+    "degreetype": "B.S.",
+    "description": "Preparation for entrance into the profession of accounting (public, private, or government) requires a basic business core in addition to a proficiency in accounting. Because of the importance of critical thinking, communication, technology, and quantitative techniques, students are urged to elect additional courses that strengthen these skills areas.",
+    "homepagelink": "https://www.etown.edu/depts/business/accounting-major.aspx"
+  },
+
+  {
+    "title": "Actuarial Science",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "engineering",
+    "degreetype": "B.S.",
+    "description": "Actuarial Science is a discipline that uses mathematical and statistical methods to quantify and manage risk in insurance, finance, and other industries. It can be a good career choice for students with strong mathematical ability who are also interested in insurance, risk management, or corporate finance.",
+    "homepagelink": "https://www.etown.edu/depts/math/actuarial-science-major.aspx"
+  },
+
+  {
+    "title": "Arts",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "B.A.",
+    "description": "Art prepares students for a career in the field of visual arts. Our students work closely with faculty to further develop their artistic skills and ideas in a variety of disciplines such as drawing, painting, ceramics, sculpture, color theory and design, graphic design and the history of art.",
+    "homepagelink": "https://www.etown.edu/depts/fine-arts/fine-arts-major.aspx"
+  },
+
+  {
+    "title": "Biochemistry and Molecular Biology",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "sciences",
+    "degreetype": "B.S.",
+    "description": "The Biochemistry and Molecular Biology (BMB) major prepares students for successful careers as research scientists at the chemistry-biology interface, or as health clinicians in translational medicine.",
+    "homepagelink": "https://www.etown.edu/depts/chemistry-biochemistry/biochemistry-major.aspx"
+  },
+
+  {
+    "title": "Biology",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "sciences",
+    "degreetype": "B.S.",
+    "description": "A degree in Biology prepares you for graduate school and the workforce by giving you the skills to observe, interpret and analyze the world around you.",
+    "homepagelink": "https://www.etown.edu/depts/biology/undergraduate-degree-in-biology.aspx"
+  },
+
+  {
+    "title": "Biology Laboratory Science",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "sciences",
+    "degreetype": "B.S.",
+    "description": "This exciting major is at the forefront of biomedical research, genetic engineering and social ethics. The Biology Laboratory Science major at Elizabethtown College has been specifically designed for our students who wish to continue either on to graduate school or pursue a career as a research associate in a research-based academic institution or in a biotechnology company.",
+    "homepagelink": "https://www.etown.edu/depts/biology/why-study-biotechnology.aspx"
+  },
+
+  {
+    "title": "Biology Secondary Education",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
     "areaofstudy": "humanandhealthprofessions",
     "degreetype": "B.S.",
-    "description": "Within the Biology major, you can choose from two concentrations to target you career goals. Biological Sciences or Health Professions. Or you can minor in Biology",
-    "homepagelink": "https://www.etown.edu/biology"
+    "description": "This program provides a strong background in the biological sciences, while simultaneously fulfilling the requirements for a secondary education teaching certification. You’ll develop fundamental knowledge of biology and lab work to make you marketable after graduation, and you will be trained in classroom management and best practices, as well as complete class observations and a student teaching semester.",
+    "homepagelink": "https://www.etown.edu/depts/education/biology-secondary-education-major.aspx"
   },
+
   {
-    "title": "business",
+    "title": "Business Administration",
     "programtype": "undergraduatemajor",
     "programtypepretty": "Major",
     "areaofstudy": "business",
     "degreetype": "B.S.",
-    "description": "Within the Biology major, you can choose from two concentrations to target you career goals. Biological Sciences or Health Professions. Or you can minor in Biology",
-    "homepagelink": "https://www.etown.edu/business"
+    "description": "Study at one of the top Business Administration programs in Pennsylvania. A Business Administration degree from Elizabethtown College provides you with a comprehensive education and the solid foundation you need to enter a variety of business and leadership careers. Whether you are looking to start your own business or work up to managing one, our flexible program will provide you with the necessary skills and business acumen.",
+    "homepagelink": "https://www.etown.edu/depts/business/business-administration-major.aspx"
+  },
+
+  {
+    "title": "Business Analytics",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "business",
+    "degreetype": "B.S.",
+    "description": "Are you interested in helping a business or organization to grow using big data? Our Business Analytics major could be the perfect fit for you. This interdisciplinary program blends courses in business and computer science to provide you with a unique skill set for a career in rapidly growing and in-demand industries such as accounting analytics, marketing analytics, finance analytics, HR analytics, or e-commerce.",
+    "homepagelink": "https://www.etown.edu/depts/business/business-analytics-major.aspx"
+  },
+
+  {
+    "title": "Chemistry",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "sciences",
+    "degreetype": "B.S.",
+    "description": "The Chemistry major at Elizabethtown College includes coursework in biology, physics, mathematics and computing, and is excellent preparation for a variety of careers in chemistry.",
+    "homepagelink": "https://www.etown.edu/depts/chemistry-biochemistry/chemistry-major.aspx"
+  },
+
+  {
+    "title": "Chemistry Laboratory Science",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "sciences",
+    "degreetype": "B.S.",
+    "description": "Our innovative Chemistry Laboratory Sciences major is the only program of its kind in Pennsylvania. The program is intended for students looking to take advantage of the growing demand for analytical chemists to fill positions that don’t require advanced degrees and who have an immediate desire to begin laboratory work in the chemical industry setting. ",
+    "homepagelink": "https://www.etown.edu/depts/chemistry-biochemistry/chemistry-laboratory-sciences-major.aspx"
+  },
+
+  {
+    "title": "Chemistry Secondary Education",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "humanandhealthprofessions",
+    "degreetype": "B.S.",
+    "description": " This concentration blends education and chemistry to prepare students for specialized positions in both areas of study. You will graduate from this program with extensive knowledge and with a degree in chemistry, as well as a Pennsylvania teaching certificate that allows you to teach in 45 other reciprocal states.",
+    "homepagelink": "https://www.etown.edu/depts/education/chemistry-education-program.aspx"
+  },
+
+  {
+    "title": "Computational Physics",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "sciences",
+    "degreetype": "B.S.",
+    "description": "Computational Physics is an interdisciplinary program, combining courses in computer science, mathematics, and physics. You will work with complex systems to acquire, process and analyze data that can then be used to find answers to the physics problems of today.",
+    "homepagelink": "https://www.etown.edu/depts/engineering-physics/physics-major.aspx"
+  },
+
+  {
+    "title": "Computer Science",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "engineering",
+    "degreetype": "B.S.",
+    "description": "In the Department of Computer Science at Elizabethtown College, we begin with the simple, fundamental concepts and principles of computer software and hardware, carefully teach students to understand them, and then push our students to where they can develop their own complex systems. We introduce a variety of disciplines that provide you with different ways to explore the technology we use every day.",
+    "homepagelink": "https://www.etown.edu/depts/computer-science/computer-science-major.aspx"
+  },
+
+  {
+    "title": "Criminal Justice",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "publicservice",
+    "degreetype": "B.A.",
+    "description": "With a focus on social justice, the Criminal Justice major emphasizes the prevention aspects of the criminal justice system. Students learn basic social science theories on the sources of conflict in America, such as race and ethnic relations and deviant behavior. Majors also acquire the analytical tools and knowledge necessary to collect and interpret crime data.",
+    "homepagelink": "https://www.etown.edu/depts/sociology-anthropology/criminal-justice-major.aspx"
+  },
+
+  {
+    "title": "Data Science",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "engineering",
+    "degreetype": "B.S.",
+    "description": "As a Data Science major, you’ll take foundational courses in computer science, mathematics and statistics, as well as courses that involve a variety of supervised and unsupervised machine learning techniques. Our Data Science program focuses on the organization, storage, and analysis of large sets of data, with a strong emphasis on the ability to communicate insightful results to a broad range of audiences.  ",
+    "homepagelink": "https://www.etown.edu/depts/computer-science/data-science-major.aspx"
+  },
+
+  {
+    "title": "Digital Media Production",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "publicservice",
+    "degreetype": "B.A.",
+    "description": "The Digital Media Production major provides a foundation for a career in the video and audio production fields, with a strong emphasis on writing for the media. You will learn the technical side of communication and broadcasting, along with the creative side. Script writing, editing, and video and audio production are just some of the skills you will develop in our program.",
+    "homepagelink": "https://www.etown.edu/depts/communications/digital-media-production-major.aspx"
+  },
+
+  {
+    "title": "Early Childhood Education",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "humanandhealthprofessions",
+    "degreetype": "B.S.",
+    "description": "Have a passion for working with young children? Want to inspire them towards a love of life-long learning? A major in Early Childhood Education could be the right choice for you. As a content generalist in several subject areas, by program completion, you’ll have a certification to teach grades Pre-K through 4th, as well as the opportunity to complete testing for add-on certifications which will allow you to teach grades 5 and 6.",
+    "homepagelink": "https://www.etown.edu/depts/education/early-childhood-education-major.aspx"
+  },
+
+  {
+    "title": "Economics",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "business",
+    "degreetype": "B.A.",
+    "description": "Students studying economics at Elizabethtown College learn about economic theories and institutions, develop communication skills, and acquire an understanding of research methods. After completing your degree in economics, you’ll be fully prepared for careers and graduate programs in economics and business.",
+    "homepagelink": "https://www.etown.edu/depts/business/economics-major.aspx"
+  },
+
+  {
+    "title": "Elementary/Middle Level Education",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "humanandhealthprofessions",
+    "degreetype": "B.S.",
+    "description": "Our Teacher Preparation program has a unique focus supported by four pillars: Professionalism (as defined by Danielson’s Domains), Social Justice, Undergraduate Research, and Theory into Practice. These pillars are explored through the curriculum, field experiences, research, and service-learning projects with faculty mentors. ",
+    "homepagelink": "https://www.etown.edu/depts/education/middle-level-education-major.aspx"
+  },
+
+  {
+    "title": "Engineering",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "engineering",
+    "degreetype": "B.S.",
+    "description": "The Engineering major is a rigorous program designed to lead to a technical career in industry or graduate school in engineering. The Engineering degree with concentrations in Biomedical, Civil, Electrical, Environmental, Industrial and Systems, Mechanical, and Mechatronics Engineering is accredited by the Engineering Accreditation Commission of ABET (www.abet.org).",
+    "homepagelink": "https://www.etown.edu/depts/engineering-physics/engineering-major.aspx"
+  },
+
+  {
+    "title": "Legal Studies",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "publicservice",
+    "degreetype": "B.A.",
+    "description": "With practical exposure and high academic standards, our graduates are prepared for the rigors of law school and graduate school. Legal Studies majors regularly earn admission to the best law school and graduate school programs across the country. Alumni have pursued successful careers as attorneys, academics, lobbyists and government relations experts.",
+    "homepagelink": "https://www.etown.edu/depts/legal-studies/"
+  },
+
+  {
+    "title": "Marketing",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "business",
+    "degreetype": "B.S.",
+    "description": " Marketers work in all areas of business from traditional product marketing to tackling emerging technology with digital marketing strategies, developing pricing strategies to managing promotional materials. You could even branch out into the more creative side of things as an advertising copywriter or graphic designer. ",
+    "homepagelink": "https://www.etown.edu/depts/business/marketing-major.aspx"
+  },
+
+  {
+    "title": "Mathematical Business",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "engineering",
+    "degreetype": "B.S.",
+    "description": "Intended for students interested in using their mathematical talents in the business world, the mathematical business major is designed to lead to careers in any sector with a business aspect, which could include government, non-profit, or the commercial sectors.",
+    "homepagelink": "https://www.etown.edu/depts/math/math-business-major.aspx"
+  },
+
+  {
+    "title": "Mathematics",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "engineering",
+    "degreetype": "B.S.",
+    "description": "Mathematics majors use inductive or deductive reasoning to formulate and evaluate arguments, model real-world phenomena mathematically, utilize mathematics effectively in problem-solving strategies and combine and apply different strands of learning in a meaningful and substantial way.",
+    "homepagelink": "https://www.etown.edu/depts/math/math-major.aspx"
+  },
+
+  {
+    "title": "Mathematics - Secondary Education",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "engineering",
+    "degreetype": "B.S.",
+    "description": "Our program is structured as a Secondary Education concentration within the Math major, which means that students who complete the program earn a fully-fledged Mathematics degree, as well as certification to teach math in secondary schools (grades 7-12) in Pennsylvania and reciprocal states.",
+    "homepagelink": "https://www.etown.edu/depts/math/math-education-major.aspx"
+  },
+
+  {
+    "title": "Media Analytics and Social Media",
+    "programtype": "undergraduatemajor",
+    "programtypepretty": "Major",
+    "areaofstudy": "publicservice",
+    "degreetype": "B.S.",
+    "description": "Prepare for your career in digital marketing and strategic communications by majoring in Media Analytics and Social Media. Our interdisciplinary program combines courses in Communications, Business and Computer Science to give you experience across a wide range of digital techniques and software that will teach you to measure, monitor and analyze digital communications data.",
+    "homepagelink": "https://www.etown.edu/depts/communications/media-analytics-social-media/media-analytics-social-media-major.aspx"
+  },
+
+  {
+    "title": "Master of Education in Curriculum and Instruction",
+    "programtype": "graduateprograms",
+    "programtypepretty": "Graduate",
+    "areaofstudy": "humanandhealthprofessions",
+    "degreetype": "M.Ed",
+    "description": "The Department of Education offers a graduate program in education leading to a Master’s degree in Curriculum and Instruction in Peace Education. This program is designed for candidates who are already certified educators (PK-12), seeking graduate study in curriculum and instruction with an emphasis on peace education, including issues of social justice, student rights, conflict resolution, community capacity, culturally responsive methods, and student/teacher advocacy. ",
+    "homepagelink": "https://www.etown.edu/depts/education/master-of-education.aspx"
+  },
+
+  {
+    "title": "Master of Education in Special Education",
+    "programtype": "graduateprograms",
+    "programtypepretty": "Graduate",
+    "areaofstudy": "humanandhealthprofessions",
+    "degreetype": "M.Ed",
+    "description": "Designed for working, in-service teachers, the online Master of Education in Special Education affords candidates a complex understanding of educational theory, an awareness and adherence to professional ethics, a commitment to professional development, and the ability to establish and maintain an equitable and purposeful learning environment for all students. Candidates may select from either K-8 or 7-12 certification for the state of Pennsylvania. ",
+    "homepagelink": "https://www.etown.edu/depts/education/master-of-education.aspx"
+  },
+
+  {
+    "title": "Master of Music Education",
+    "programtype": "graduateprograms",
+    "programtypepretty": "Graduate",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "M.M.E.",
+    "description": "This program is designed for certified, in-service teachers and blends online learning with one week per-summer of face-to-face interaction. During the three-year program, candidates build the skills, knowledge, and reflective space to teach music through the lens of peacebuilding.",
+    "homepagelink": "https://www.etown.edu/scps/programs/graduate/mme.aspx"
+  },
+
+  {
+    "title": "Master of Organizational Analytics",
+    "programtype": "graduateprograms",
+    "programtypepretty": "Graduate",
+    "areaofstudy": "scps",
+    "degreetype": "M.S.",
+    "description": "The new Master of Organizational Analytics is designed to provide students with an overview of applied statistical analysis, one of the most prominent, in-demand and growing fields.",
+    "homepagelink": "https://www.etown.edu/scps/programs/graduate/moa.aspx"
+  },
+
+  {
+    "title": "Master of Physician Assistant Studies",
+    "programtype": "graduateprograms",
+    "programtypepretty": "Graduate",
+    "areaofstudy": "scps",
+    "degreetype": "M.S.",
+    "description": "Study for your Master of Science degree in Physician Assistant Studies at Elizabethtown College. We offer two entry options for incoming students to the program; a combined BS/MS degree over five years for incoming first-year Etown students or a standalone master’s degree over 26 months for students with a bachelor’s degree from Etown or another institution.",
+    "homepagelink": "https://www.etown.edu/depts/physician-assistant/index.aspx"
+  },
+
+  {
+    "title": "Master of Public Policy",
+    "programtype": "graduateprograms",
+    "programtypepretty": "Graduate",
+    "areaofstudy": "scps",
+    "degreetype": "M.P.P.",
+    "description": "This degree program provides students with the analytical skills needed to dissect problems, interpret data, and evaluate policy alternatives, all critically important in a changing world.",
+    "homepagelink": "https://www.etown.edu/scps/programs/graduate/mpp.aspx"
+  },
+
+  {
+    "title": "Master of Science in Occupational Therapy",
+    "programtype": "graduateprograms",
+    "programtypepretty": "Graduate",
+    "areaofstudy": "humanandhealthprofessions",
+    "degreetype": "M.S.",
+    "description": "Students must be enrolled in the Health Science degree (Bachelor of Science) at Elizabethtown with a minimum GPA of 2.9 by the end of the third year to qualify for the graduate portion of the Occupational Therapy curriculum. Students must maintain a minimum GPA of 3.0 throughout the fourth year and graduate years in order to successfully graduate with the MS or OTD in occupational therapy.",
+    "homepagelink": "https://www.etown.edu/depts/occupational-therapy/occupational-therapy-major.aspx"
+  },
+
+  {
+    "title": "Architectural Studies",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "The interdisciplinary minor in Architectural Studies provides a general introduction to careers in architecture. The curriculum includes architectural design, sustainability, engineering principles and the history of the built environment. Students learn to design original buildings for real-world contexts with client and community involvement.",
+    "homepagelink": "https://www.etown.edu/depts/fine-arts/fine-arts-minor.aspx"
+  },
+
+  {
+    "title": "Arts Administration",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "The minor curriculum requires the completion of 24 credits. There are five parts of the minor: Business courses, Arts courses, an internship, a MOOC, and a capstone course.",
+    "homepagelink": "https://www.etown.edu/depts/fine-arts/arts-administration-minor.aspx"
+  },
+
+  {
+    "title": "Arts",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "An Arts Minor is the perfect opportunity for non-majors to develop their artistic skills. The Arts Minor involves a combination of studio practices and courses. When paired with other disciplines, an Arts minor offer a world of possibilities to expand your skills and career options.",
+    "homepagelink": "https://www.etown.edu/depts/fine-arts/fine-arts-minor.aspx"
+  },
+
+  {
+    "title": "Asian Studies",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "An Asian Studies minor offers students an opportunity for cohesive study of Asia. The interdisciplinary program allows students to advance their study of Asian history, culture, language and society and can serve as preparation for a variety of careers and graduate school option.",
+    "homepagelink": "https://www.etown.edu/depts/interdisciplinary-programs/asian.aspx"
+  },
+
+  {
+    "title": "Biochemistry",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "sciences",
+    "degreetype": "",
+    "description": "Students majoring in another discipline are able to add a minor in Biochemistry to their studies. Whether you're majoring in another STEM field or not, our minor is very flexible and compliments many different areas of study.",
+    "homepagelink": "https://www.etown.edu/depts/chemistry-biochemistry/biochemistry-major.aspx"
+  },
+
+  {
+    "title": "Biology",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "sciences",
+    "degreetype": "",
+    "description": "A degree in Biology prepares you for graduate school and the workforce by giving you the skills to observe, interpret and analyze the world around you. ",
+    "homepagelink": "https://www.etown.edu/depts/biology/undergraduate-degree-in-biology.aspx"
+  },
+
+  {
+    "title": "Business Administration",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "business",
+    "degreetype": "",
+    "description": "The BA minor is designed to provide you with the fundamental building blocks of business in the areas of accounting, management, law, and economics. The minor could be paired up with several majors across campus to help you with your desired career path.",
+    "homepagelink": "https://www.etown.edu/depts/business/minors.aspx"
+  },
+
+  {
+    "title": "Chemistry",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "sciences",
+    "degreetype": "",
+    "description": "Students majoring in another discipline are able to add a minor in Chemistry to their studies. Whether you're majoring in another STEM field or not, our minor is very flexible and compliments many different areas of study.",
+    "homepagelink": "https://www.etown.edu/depts/chemistry-biochemistry/chemistry-major.aspx#minor"
+  },
+
+  {
+    "title": "Cognitive Science",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "This interdisciplinary minor integrates elements of Psychology, Biology, Neuroscience, Philosophy, and Computer Science into a unified field of study to better understand the human mind.",
+    "homepagelink": "https://www.etown.edu/depts/psychology/psychology-major.aspx"
+  },
+
+  {
+    "title": "Communications",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "A Communications minor is offered to students majoring in other programs. The minor permits students to reach a level of competency in written, spoken, and visual communications to complement their primary area of preparation.",
+    "homepagelink": "https://www.etown.edu/depts/communications/"
+  },
+
+  {
+    "title": "Computer Science",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "engineering",
+    "degreetype": "",
+    "description": "In the Department of Computer Science at Elizabethtown College, we begin with the simple, fundamental concepts and principles of computer software and hardware, carefully teach students to understand them, and then push our students to where they can develop their own complex systems. We introduce a variety of disciplines that provide you with different ways to explore the technology we use every day.",
+    "homepagelink": "https://www.etown.edu/depts/computer-science/computer-science-major.aspx"
+  },
+
+  {
+    "title": "Creative Writing",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "The minor gives students the opportunity to take classes in playwriting, screenwriting, poetry, and prose. Study the art of the short story, or the emerging field of creative non-fiction. Many students choose to combine an English major and Creative Writing minor, but the program is designed to be flexible so that it can be paired with any major.",
+    "homepagelink": "https://www.etown.edu/depts/interdisciplinary-programs/creative-writing.aspx"
+  },
+
+  {
+    "title": "Data Analytics",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "Our Data Analytics minor is designed to provide students with an overview of big data, one of the most prominent, in-demand and growing fields. You will gain the ability to manage, process, analyze, and interpret data through taking a variety of courses, across several fields, in preparation for a career in a business environment.",
+    "homepagelink": "https://www.etown.edu/depts/interdisciplinary-programs/data-analytics.aspx"
+  },
+
+  {
+    "title": "Economics",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "business",
+    "degreetype": "",
+    "description": "Students studying economics at Elizabethtown College learn about economic theories and institutions, develop communication skills, and acquire an understanding of research methods. ",
+    "homepagelink": "https://www.etown.edu/depts/business/economics-major.aspx"
+  },
+
+  {
+    "title": "English Literature",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "A Literature minor takes several literature courses from different time periods, genres, and styles to develop a basic understanding of literature. ",
+    "homepagelink": "https://www.etown.edu/depts/english/english-major.aspx"
+  },
+
+  {
+    "title": "English Professional Writing",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "A Professional Writing minor takes a combination of writing and literature courses to gain fundamental skills in both writing and reading comprehension.",
+    "homepagelink": "https://www.etown.edu/depts/english/english-major.aspx"
+  },
+
+  {
+    "title": "Family Business and Entrepreneurship",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "business",
+    "degreetype": "",
+    "description": "The focus of the Family Business and Entrepreneurship minor is on entrepreneurial family businesses and new ventures and their use of innovation as the main growth engine. The minor develops the skills needed to lead and perform effectively as a member of a family business and to recognize and capitalize on opportunities to launch new ventures.",
+    "homepagelink": "https://www.etown.edu/depts/business/minors.aspx"
+  },
+
+  {
+    "title": "Finance",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "business",
+    "degreetype": "",
+    "description": "The Finance minor is a great addition to any program, for students interested in investment, financial planning and financial transactions such as mergers and acquisitions.",
+    "homepagelink": "https://www.etown.edu/depts/business/minors.aspx"
+  },
+
+  {
+    "title": "French",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "Studying French at Etown College is not only going to teach you the language, but also going to immerse you in the culture. Although language is one of the key components in the minor, studying abroad is also a guaranteed opportunity.",
+    "homepagelink": "https://www.etown.edu/depts/modern-languages/french.aspx"
+  },
+
+  {
+    "title": "General Science",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "The General Science minor offers students the opportunity to study the natural sciences as a group, based on the view that the natural sciences together are the area of secondary interest for the student.",
+    "homepagelink": "https://www.etown.edu/depts/interdisciplinary-programs/general-science.aspx"
+  },
+
+  {
+    "title": "German",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "The German program is flexible: We welcome minors from all majors. Graduating with a German minor has enabled some of our recent students to win prestigious scholarships, including Fulbright, or gain admission to top-ranked graduate schools such as the University of Wisconsin (Madison) and University of Texas (Austin). Other graduates pursue a surprisingly broad range of careers such as: executive with a pharmaceutical company in Germany; college professor; high-school German teacher; positions with—often German-American—corporations, non-profit agencies, and educational foundations.",
+    "homepagelink": "https://www.etown.edu/depts/modern-languages/german.aspx"
+  },
+
+  {
+    "title": "Graphic Design",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "Graphic design is a form of visual communication vital to every industry and institution. Graphic designers create images and typography for digital and print media as well as computer-generated works of art.",
+    "homepagelink": "https://www.etown.edu/depts/fine-arts/fine-arts-minor.aspx"
+  },
+
+  {
+    "title": "History",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "History is a great option to pair with a double major or a minor. As a history minor, you’ll have the opportunity to craft your course of study around topics that interest you, combining subjects to form a unique historical perspective.",
+    "homepagelink": "https://www.etown.edu/depts/history/history-major.aspx"
+  },
+
+  {
+    "title": "Human Services",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "Our Human Services minor is designed to provide students with an inter-disciplinary overview of social issues in the United States, including human development, multicultural knwoeldge and the development of U.S. social welfare institutions.",
+    "homepagelink": "https://www.etown.edu/depts/interdisciplinary-programs/human-services.aspx"
+  },
+
+  {
+    "title": "Information Systems",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "engineering",
+    "degreetype": "",
+    "description": "The Information Systems minor prepares students for jobs in highly valued professions such as systems managers, project managers, system analysts, software engineers, database managers and a whole host of others.",
+    "homepagelink": "https://www.etown.edu/depts/computer-science/information-systems-major.aspx"
+  },
+
+  {
+    "title": "International Studies",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "The International Studies minor is an interdisciplinary minor, comprised of a cluster of foreign culture, language, and international affairs courses with a largely contemporary focus. It provides the students with enhanced understanding of the conditions in the rest of the world that are making themselves felt in the daily lives of Americans.",
+    "homepagelink": "https://www.etown.edu/depts/interdisciplinary-programs/international-studies/index.aspx"
+  },
+
+  {
+    "title": "Japanese",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": " Japanese minors are only required to take six levels of Japanese with the option of studying abroad. Students also have the option of studying Japanese culture in depth from courses that are offered in English.",
+    "homepagelink": "https://www.etown.edu/depts/modern-languages/japanese.aspx"
+  },
+
+  {
+    "title": "Mathematics",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "engineering",
+    "degreetype": "",
+    "description": "You’ll build a solid foundation in advanced mathematics such as calculus and linear algebra, and have the flexibility to customize the minor to your specific interests.",
+    "homepagelink": "https://www.etown.edu/depts/math/math-major.aspx"
+  },
+
+  {
+    "title": "Music",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "The Music minor provides students with opportunities to acquire and develop skills in music theory, music performance, music history, and literature.",
+    "homepagelink": "The Music minor provides students with opportunities to acquire and develop skills in music theory, music performance, music history, and literature."
+  },
+
+  {
+    "title": "Sociology",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "publicservice",
+    "degreetype": "",
+    "description": "The Sociology minor emphasizes conceptual and applied approaches so that the student is prepared for a variety of career opportunities. Students minoring in Sociology can explore careers in business, government, criminal justice, survey and marketing research, religious settings, and in other fields in which knowledge of society and human behavior is important.",
+    "homepagelink": "https://www.etown.edu/depts/sociology-anthropology/"
+  },
+
+  {
+    "title": "Spanish",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "artsandhumanities",
+    "degreetype": "",
+    "description": "Studying Spanish is culturally relevant, personally rewarding and professionally profitable. As one of the world’s most widely-spoken languages, and as the second largest in terms of native speakers, learning Spanish is a worthwhile endeavor. Knowledge of Spanish is relevant and beneficial to students, opening their world to new opportunities and adventures.",
+    "homepagelink": "https://www.etown.edu/depts/modern-languages/spanish.aspx"
+  },
+
+  {
+    "title": "Technical Design",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "engineering",
+    "degreetype": "",
+    "description": "Students will learn to solve complex real world problems on multidisciplinary teams.",
+    "homepagelink": "https://www.etown.edu/depts/engineering-physics/engineering-major.aspx"
+  },
+
+  {
+    "title": "Women and Gender Studies",
+    "programtype": "undergraduateminor",
+    "programtypepretty": "Minor",
+    "areaofstudy": "interdisciplinary",
+    "degreetype": "",
+    "description": "The Women and Gender Studies (WGS) program is designed for students who want to understand the world about them using concepts such as gender, race/ethnicity, class, sexuality, and religion.  It is also designed for students who are passionate about social change.",
+    "homepagelink": "https://www.etown.edu/depts/interdisciplinary-programs/wgs/index.aspx"
   }
 ]
