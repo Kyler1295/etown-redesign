@@ -1117,8 +1117,8 @@ a[class*="button"] {
         p {
           color: $white;
           width: 90%;
-          margin: 0 auto;
-          font-size: $text-font * .7;
+          margin: 5px auto;
+          font-size: $text-font * .8;
         }
 
         h4 {
@@ -1184,7 +1184,12 @@ a[class*="button"] {
         &.hidden {
           display: flex;
         }
-        
+        .social-block__content {
+          p {
+            font-size: $text-font * 1.4;
+            margin: 15px auto;
+          }
+        }
       }
     }
   }
