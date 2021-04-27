@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Formatter</title>
+</head>
+<body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .inputWrapper {
+      width: 80vw;
+      margin: 0 auto;
+      display: flex;
+      height: 50vh;
+    }
+    
+    .outputWrapper {
+      width: 80vw;
+      margin: 1% 10%;
+      height: 40vh;
+    }
+
+    .inputHolder {
+      width: 50%;
+    }
+
+    .options {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    input {
+      width: 90%;
+      margin: 15px 0 15px 0;
+      display: inline;
+    }
+
+    .guide {
+      width: 50%;
+      display: inline;
+    }
+  </style>
+  
+
+  <div class="inputWrapper">
+    <div class="inputHolder">
+      <input type="text" id="name" placeholder="Name"><br>
+      <input type="text" id="title" placeholder="Title"><br>
+      <input type="text" id="desc" placeholder="Description"><br>
+      <input type="text" id="email" placeholder="Email"><br>
+      <input type="text" id="number" placeholder="Number"><br>
+      <input type="text" id="slug" placeholder="Areas of expertise">
+      <div class="options">
+        <button id="generateJson">Submit</button>
+        <button id="copy">Copy Text</button>
+        <button id="clear">Clear Output</button>
+      </div>
+    </div>
+
+    <div class="guide">
+      <br><br><br>
+      <h1>Guide</h1>
+      <p>Format the slugs with a comma and no space between each type.</p>
+      <p>E.G. "Computer Science,Art,History,Art History"</p>
+    </div>
+
+  </div>
+
+  <textarea class="outputWrapper"></textarea>
+  
+
+  <script>
+    const _ = (id) => {return document.getElementById(id)}
+    let name = _('name')
+    let title = _('title')
+    let desc = _('desc')
+    let email = _('email')
+    let number = _('number')
+    let slug = _('slug')
+    let output = document.querySelector('.outputWrapper')
+    let button = _('generateJson')
+    let copy = _('copy')
+    let clear = _('clear')
+
+    const parseSingleQuote = (stringType) => {
+      let newString = stringType.replace(/"/g, '\\"');
+      return newString
+    }
+
+    button.addEventListener('click', () => {
+      output.innerHTML += `
+      {
+        "name": "${parseSingleQuote(name.value)}",
+        "title": "${parseSingleQuote(title.value)}",
+        "desc": "${parseSingleQuote(desc.value)}",
+        "email": "${parseSingleQuote(email.value)}",
+        "number": "${parseSingleQuote(number.value)}",
+        "desslugcription": "${parseSingleQuote(slug.value)}",
+      },`
+    })
+
+    copy.addEventListener('click', () => {
+      output.select()
+      output.setSelectionRange(0, 99999)
+      document.execCommand("copy")
+    })
+
+    clear.addEventListener('click', () => {
+      output.innerHTML = ''
+      let allInputs = [...document.querySelectorAll('input')]
+      allInputs.forEach((input) => {input.value = ''})
+    })
+
+  </script>
+</body>
+</html>
