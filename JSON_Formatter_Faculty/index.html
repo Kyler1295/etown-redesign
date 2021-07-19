@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Formatter</title>
+</head>
+<body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .inputWrapper {
+      width: 80vw;
+      margin: 0 auto;
+      display: flex;
+      height: 50vh;
+    }
+    
+    .outputWrapper {
+      width: 100%;
+      height: 70vh;
+    }
+
+    .inputHolder {
+      width: 50%;
+    }
+
+    .options {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    input {
+      width: 90%;
+      margin: 15px 0 15px 0;
+      display: inline;
+    }
+
+    .guide {
+      width: 50%;
+      display: inline;
+    }
+  </style>
+  
+  <br><br><br><br>
+  <div class="inputWrapper">
+    <div class="inputHolder">
+      <input type="text" id="name" placeholder="Name"><br>
+      <input type="text" id="title" placeholder="Title"><br>
+      <input type="text" id="department" placeholder="Department"><br>
+      <input type="text" id="school" placeholder="School"><br>
+      <input type="text" id="image" placeholder="Image URL"><br>
+      <input type="text" id="email" placeholder="Email"><br>
+      <input type="text" id="phoneNumber" placeholder="Phone Number"><br>
+      <input type="text" id="degrees" placeholder="Degrees (Listed between <li>)"><br>
+      <input type="text" id="bio" placeholder="Bio"><br>
+      <div class="options">
+        <button id="generateJson">Submit</button>
+        <button id="copy">Copy Text</button>
+        <button id="clear">Clear Output</button>
+      </div>
+    </div>
+
+    <div class="guide">
+      <h1>Output</h1>
+      <textarea class="outputWrapper"></textarea>
+    </div>
+
+  </div>
+
+  
+  
+
+  <script>
+    const _ = (id) => {return document.getElementById(id)}
+    let name = _('name')
+    let title = _('title')
+    let department = _('department')
+    let school = _('school')
+    let image = _('image')
+    let email = _('email')
+    let phoneNumber = _('phoneNumber')
+    let degrees = _('degrees')
+    let bio = _('bio')
+    let button = _('generateJson')
+    let copy = _('copy')
+    let clear = _('clear')
+    let output = document.querySelector('.outputWrapper')
+
+
+    const parseSingleQuote = (stringType) => {
+      let newString = stringType.replace(/"/g, '\\"');
+      return newString
+    }
+
+    button.addEventListener('click', () => {
+      output.innerHTML += `
+      {
+        "name": "${parseSingleQuote(name.value)}",
+        "title": "${parseSingleQuote(title.value)}",
+        "department": "${parseSingleQuote(department.value)}",
+        "school": "${parseSingleQuote(school.value)}",
+        "image": "${parseSingleQuote(image.value)}",
+        "email": "${parseSingleQuote(email.value)}",
+        "phoneNumber": "${parseSingleQuote(phoneNumber.value)}",
+        "degrees": "${parseSingleQuote(degrees.value)}",
+        "bio": "${parseSingleQuote(bio.value)}",
+      },`
+    })
+
+    copy.addEventListener('click', () => {
+      output.select()
+      output.setSelectionRange(0, 99999)
+      document.execCommand("copy")
+    })
+
+    clear.addEventListener('click', () => {
+      output.innerHTML = ''
+      let allInputs = [...document.querySelectorAll('input')]
+      allInputs.forEach((input) => {input.value = ''})
+    })
+
+  </script>
+</body>
+</html>
